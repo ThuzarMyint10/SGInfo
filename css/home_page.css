@@ -30,72 +30,173 @@
 
     --transition: all 400ms ease;
 }
-
-body {
+body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: var(--color-white);
     background: var(--color-bg);
 }
 
-body {
-    font-family: 'Playfair Display', serif;
-}
+
 
 .container{
-    width: var(--container-width-lg);
-    margin: 0 auto;
+   width: var(--container-width-lg);
+   margin: 0 auto;
 }
 
-section {
-    padding: 6rem 0;
+section h2{
+   text-align: center;
+   margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5{
+   line-height: 1.2;
+}
+h1{
+   font-size: 2.4rem;
+}
+h1{
+   font-size: 2.4rem;
+}
+h2{
+   font-size: 2.4rem;
+}
+h3{
+   font-size: 1.6rem;
+}
+h4{
+   font-size: 1.3rem;
+}
+a{
+   color: var(--color-white);
+}
+img{
+   width: 100%;
+   display: block;
+   object-fit: cover;
+}
+.btn{
+   display: inline-block;
+   background: var(--color-white);
+   color: var(--color-black);
+   padding: 1rem 2rem;
+   border: 1px solid transparent;
+   font-weight: 500;
+   transition: var(--transition);
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
 
-h1, h2, h3, h4, h5 {
-    line-height: 1.2;
+/* =============== Header Start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #4A9BE3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
-
-h1 {
-    font-size: 2.4rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.6rem;
-}
-
-h4 {
-    font-size: 1.3rem;
-}
-
-a {
+#header a{
     color: var(--color-white);
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    transition: 0.3s ease;
+
+}
+.navbar li a:hover,
+.navbar li a.active
+{
+    color: #F6D106;
+}
+.navbar li a.active::after,.navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #F6D106;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* Home Page*/
+#hero h1{
+     color:var(--color-white);
+     margin-bottom: 15px;
 }
 
-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
+#hero p{
+    margin: 1rem 0 2rem;
+    color:var(--color-white);
+
 }
 
+.banner-btn{
+	background-color: transparent;
+   
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	transition: color 0.5s;
+    text-align: center;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4A9BE3;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+   
 
-
-.btn {
+}
+.banner-btn a:hover{
     display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    font-weight: 500;
-    transition: var(--transition);
+	text-decoration-color: #F6D106;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #87bceb;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: var(--color-warning);
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -349,4 +450,37 @@ a.room-detail:hover{
     }
 }
 /* end of home-room and home-gen */
+.sginfo{
+    color: #F6D106;
+}
+.logoimg{
+    width: 50%;
+    height: 100%;
+}
+/*=========== Slider ==================*/
+.slider{
+    height: 500px;
+}
+.carousel_text{
+    position: absolute;
+    top: 240px;
+    left: 150px;
+    z-index: 1;
+    color: #1f2641;
+}
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  /*================ MEDIA QUARIES ===========*/
 
