@@ -104,6 +104,8 @@
 }
 .review .review-detail img{
     border-radius: 50%;
+    width: 15%;
+    height: 75%;
 }
 .review .review-detail p{
     margin-top: 20px;
@@ -237,6 +239,83 @@
     background-color: black;
     cursor: pointer;
     color: white;
-    margin-left: 25%;
+    margin-left: 10%;
     border-radius: 10px;
+}
+
+
+/*================================ Responsive ===============================*/
+@media (max-width:799px){
+    .review .review-detail img {
+        height: 50%;
+        width: 50%;
+    }
+    #main {
+        flex-direction: column;
+    }
+    #right {
+        width: 80%;
+        margin-top: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        overflow: hidden;
+        height: auto;
+    }
+    #left {
+        width: 100%;
+    }
+    .extra span {
+        text-align: left;
+    }
+    .post-btn {
+        margin-top: 0px;
+        padding: 10px 15px;
+        width: 30%;
+    }
+    .review .reply input {
+        width: 30%;
+    }
+    .comment-btn {
+        width: 30%;
+        padding: 11px 20px;
+    }
+    .review .review-detail img {
+        height: 50%;
+        width: auto;
+        border-radius: 50%;
+    }
+    #left {
+        padding: 20px 10px;
+        border: none;
+    }
+    .amenities .amenities-group {
+        margin-top: 20px;
+    }
+    .book-btn {
+        margin: 0 auto;
+    }
+}
+
+/*================================ Responsive ===============================*/
+@media (max-width:477px){
+    #main {
+        margin: 10px;
+    }
+    .title-right{
+        width: 30%;
+        padding-left: 10px;
+    }
+    .review-main {
+        padding: 10px 10px;
+    }
+    .comment-btn {
+        width: 37%;
+        padding: 11px 15px;
+    }
+    .review .reply input {
+        width: 10%;
+    }
+    #right {
+        width: 100%;
+    }
 }
