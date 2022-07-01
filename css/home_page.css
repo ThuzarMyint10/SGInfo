@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+ 
 
 
 * {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
     margin: 0;
     padding: 0;
     border: 0;
@@ -38,9 +39,6 @@ body{
    
     /* background: var(--color-bg); */
 }
-
-
-
 .container{
    width: var(--container-width-lg);
    margin: 0 auto;
@@ -104,10 +102,107 @@ img{
     top: 0;
     left: 0;
 }
-
-h1 {
-    font-size: 2.4rem;
+#header a{
+    color: var(--color-white);
+    text-decoration: none;
 }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    transition: 0.3s ease;
+
+}
+.navbar li a:hover,
+.navbar li a.active
+{
+    color: #F6D106;
+}
+.navbar li a.active::after,.navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #F6D106;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* Home Page*/
+#hero h1{
+     color:var(--color-white);
+     margin-bottom: 15px;
+}
+
+#hero p{
+    margin: 1rem 0 2rem;
+    color:var(--color-white);
+
+}
+
+.banner-btn{
+	background-color: transparent;
+   
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	transition: color 0.5s;
+    text-align: center;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4A9BE3;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+   
+
+}
+.banner-btn a:hover{
+    display: inline-block;
+	text-decoration-color: #F6D106;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #87bceb;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: var(--color-warning);
+    font-weight: bold;
+}
+
 
 h2 {
     font-size: 2rem;
@@ -1287,5 +1382,11 @@ a.room-detail:hover{
     height: auto;
   }
 
-  /*================ MEDIA QUARIES ===========*/
+  
+
+
+
+
+
+    
 
