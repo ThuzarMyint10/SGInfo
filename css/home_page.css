@@ -237,12 +237,12 @@ a.room-detail:hover{
 
 #home-room a::after {
     content: "";
-    width: 50px;
-    height: 1.5px;
+    width: 3rem;
+    height: 0.15rem;
     background-color: #fab702;
     position: absolute;
-    top: 138px;
-    right: 590px;
+    top: 8.4rem;
+    right: 34.5rem;
 }
 
 #home-room-container {
@@ -372,8 +372,11 @@ a.room-detail:hover{
 
 
 @media (max-width:799px) {
+    #home-room h2 {
+        font-size: 2.3rem;
+    }
     #home-room a::after {
-            right: 290px;
+        right: 290px;
     }
 
     #home-room-container {
@@ -381,8 +384,13 @@ a.room-detail:hover{
         flex-wrap: wrap;
     }
     #home-room .home-room-sample {
-        margin: 15px;
-        min-width: 250px;
+        margin: 0.9em;
+        min-width: 15em;
+        width: 27%;
+    }
+
+    #home-gen-info h2 {
+        font-size: 2.3rem;
     }
     .home-gen-info-container img {
         height: 50vh;
@@ -407,12 +415,39 @@ a.room-detail:hover{
 }
 
 @media (max-width: 477px) {
+
+    #home-room h2 {
+        margin: 0;
+        padding: 0.6em 0;
+        font-size: 1.8rem;
+    }
+
+    a.room-detail {
+        padding-bottom: 0.7em;
+        padding-right: 3.5em;
+    }
     
     #home-room a::after {
-        right: 120px;
+        top: 7.5em;
+        right: 7.2em;
+    }
+    #home-room-container {
+        display: flex;
+        flex: wrap;
+        padding: 0.9em 0;
+    }
+
+    #home-room .home-room-sample {
+        margin: 0.8em;
+        min-width: 100%;
     }
     #home-gen-info {
         padding-top: 880px;
+    }
+    #home-gen-info h2 {
+        margin: 0;
+        padding: 1em 0;
+        font-size: 2rem;
     }
     .home-gen-info-det h4 {
         font-size: 20px;
