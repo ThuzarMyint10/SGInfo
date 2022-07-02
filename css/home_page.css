@@ -85,7 +85,7 @@ img{
 }
 
 
-/* =============== Header Start */
+/* =============== Header Start ==============*/
 #header{
     display: flex;
     align-items: center;
@@ -325,7 +325,14 @@ a.room-detail:hover{
     border-color: var(--color-white);
 }
 
+
+/* =========== HOME JOBS ============== */
+
+#home_jobs{
+    background-color: var(--color-bg);
+}
 .jobs_header {
+    padding-top: 3rem;
     text-align: center;
     width: 100%; 
     margin-top: 1rem;
@@ -339,15 +346,14 @@ a.room-detail:hover{
 .search_icon{
     border-color: yellow;
     border-style: dashed;
-    background-color: #fff;
+    background-color: #bcd8f0;
     width: 20rem;
     height: 2.8rem;
     border-radius: 0.3rem;
-
 }
 
 .uil{
-    color: #4A9BE3;
+    color: #554848;
     display: inline-block;
 }
 
@@ -360,7 +366,7 @@ a.room-detail:hover{
     padding-left: 0rem;
     /* margin-right: 2rem; */
     width: 15rem;
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
 #location{
@@ -371,7 +377,7 @@ a.room-detail:hover{
     /* margin-left: 1rem; */
     width: 15rem;
     /* padding-left: 1rem; */
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
 #jobs_categories{
@@ -384,7 +390,7 @@ a.room-detail:hover{
     width: 15rem;
     /* padding-left: 1rem; */
     padding-right: 2rem;
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
 /* .jobs_option:hover {background-color: green; } */
@@ -396,13 +402,19 @@ a.room-detail:hover{
     /* margin-left: 1rem; */
     /* width: max-content; */
     cursor: pointer;
-    background-color: #f7c94b;
+    background-color: #e60078;
     width: 8rem;
     border-radius: 0.4rem;   
 }
 
 .search a{
+    color: #bcd8f0;
+    text-decoration: none;
+}
+
+.search a:hover{
     color: #554848;
+    text-decoration: underline;
 }
 
 #jobs_container{
@@ -421,9 +433,10 @@ a.room-detail:hover{
 }
 
 
+
 #h2{
     font-family: 'Roboto', sans-serif;
-    color: #f7c94b;
+    color: rgb(247, 201, 75);
     text-align: center;
     margin-top: 2.5rem;
 }
@@ -453,9 +466,13 @@ a.room-detail:hover{
     padding: 10px 16px;
 }
 
+
+
 #jobs_type a{
     color: #554848;
+    text-decoration: none;
 }
+
 
 .browse{
     font-size: 15px;
@@ -465,25 +482,46 @@ a.room-detail:hover{
     width: max-content;
     margin-top: 1rem;
     cursor: pointer;
-    background-color: #4A9BE3;
+    /* background-color: #4A9BE3; */
+    background-color: rgb(247, 201, 75);
     width: 10rem;
     border-radius: 0.3rem;
-    margin-bottom:2.5rem;
     margin: 0 auto;
     display: block;
+    margin-bottom: 1.2em;
 }
 
 .browse a{
     color: #554848;
     text-align: center;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 799px){
+.browse a:hover{
+    color: #bcd8f0;
+    text-decoration: none;
+    text-shadow: rgba(216, 216, 216, 0.1);
+}
+
+@media only screen and (max-width: 989px){
     .jobs_header{
         width: 100%;
         /* margin-right: 16px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 1.9rem;
     }
 
+    .search_icon{
+        width: 92%;
+        
+        margin-bottom: 0.5rem;
+        /* margin-left: 1rem; */
+        
+    }
+
+
+    
     #search_jobs{
         width: 90%;
         margin-bottom: 0.5rem;
@@ -505,8 +543,9 @@ a.room-detail:hover{
     }
 
     .search{
-        width: 30%;
+        width: 21%;
         margin-top: 0.5rem;
+        /* margin-left: 15rem; */
     }
 
     .jobbackground_color{
@@ -538,8 +577,6 @@ a.room-detail:hover{
     }
 
 }
-
-
 
 
 @media only screen and (max-width: 477px){
@@ -600,6 +637,10 @@ a.room-detail:hover{
         text-align: center;
     }
 
+    .jobbackground_color a{
+        text-decoration: none;
+    }
+
     /* #jobs_type{
         margin: 0;
         padding: 9px 0 9px 0;
@@ -619,15 +660,13 @@ a.room-detail:hover{
     padding-bottom: 0.1rem;
 }
 
-
-
     .browse{
         margin-left: 6rem;
     }
 
 }
 
-
+/* ============END OF HOME JOBS=============== */
 
 
 
@@ -649,11 +688,11 @@ a.room-detail:hover{
     overflow: hidden;
     scroll-behavior: smooth;
     margin: 16px;
-    padding: 28px;
- }
- .swiper-wrapper {
+    padding: 28px;jobbackground_color
+    }
+    .swiper-wrapper {
     margin: 16px;
- }
+    }
   .swiper-slide img {
     display: block;
     width: 100%;
