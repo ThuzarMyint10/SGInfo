@@ -50,6 +50,10 @@ var swiper = new Swiper(".mySwiper", {
         }
   });
 
+  // End of Travel Guide Slider
+
+
+
 //show/hide nav menu
 // const menu = document.querySelector(".navbar");
 // const menuBtn = document.querySelector("#open-menu-btn");
@@ -65,3 +69,8 @@ var swiper = new Swiper(".mySwiper", {
 //     menuBtn.style.display ="inline-block";
 // }
 // closeBtn.addEventListener('click', closeNav);
+
+// facilities & features select box
+$(document).ready(function(){
+    $('.multi_select').selectpicker();
+})
