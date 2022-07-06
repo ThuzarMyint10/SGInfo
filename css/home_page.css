@@ -772,7 +772,7 @@ a.room-detail:hover{
     background-color: #bcd8f0;
 }
 
- .aaa:hover{
+     .aaa:hover{
     background-color: #090E6A;
     color: #554848;
     font-size: 30px;
@@ -1087,7 +1087,7 @@ a.room-detail:hover{
     overflow: hidden;
     scroll-behavior: smooth;
     margin: 16px;
-    padding: 28px;jobbackground_color
+    padding: 28px;
     }
     .swiper-wrapper {
     margin: 16px;
