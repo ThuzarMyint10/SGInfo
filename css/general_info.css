@@ -8,35 +8,235 @@
     box-sizing: border-box;
 }
 
-
-
-
-#middle_container {
+#general_info {
     width: 100%;
-    margin: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#first_general {
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    flex: wrap;
+}
+
+.first_container {
+    width: 100%;
+    margin: 20px;
+    padding: 0 20px;    
+}
+.second_container {
+    margin: 20px;
+    padding: 0 20px;
+}
+.single {
     position: relative;
 }
 .single h3::after {
     content: "";
-    width: 220px;
-    height: 1.7px;
+    width: 7.3em;
+    height: 0.15em;
     background-color: #fab702;
     position: absolute;
-    top: 35px;
-    left: 110px;
+    top: 22px;
+    left: 160px;
+}
+.group {
+    position: relative;
 }
 
-#middle_container .single img {
-    /* width: 50%; */
-    height: 30vh;
-    opacity: 0.5;
+.group h3::after {
+    content: "";
+    width: 7.3em;
+    height: 0.15em;
+    background-color: #fab702;
+    position: absolute;
+    top: 22px;
+    left: 160px;
 }
-#middle_container .single {
-    /* width: 50%; */
+
+.first_container .header_3{
+    padding: 0.5em 0;
 }
-#middle_container .single .single_des {
-    /* width: 50%; */
+.second_container .header_3 {
+    padding: 0.5em 0;
+}
+
+.first_container .single .gift_img {
+    padding: 0.8em 0;
+    width: 100%;
+    height: 200px;
+}
+
+.first_container .single .single_des {
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: justify;
+}
+
+.small_article {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.small_img {
+    width: 100%;
+}
+ .small_img img {
+    width: 120px;
+    height: 95px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.small_article .small_img {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.small_article .small_title {
+    margin: auto 0;
+}
+
+#second_general {
+    width: 35%;
+    padding: 5px 0;
+}
+
+.group .circle {
+    padding: 10px 5px;
+    display: flex;
+    align-items: flex-start;
+}
+.group .circle img {
+    width: 90px;
+    height: 90px;
+    margin: auto 0;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.group .circle p {
+    padding: 8px 0;
+}
+.group .circle p span {
+    font-weight: bold;
+}
+
+@media (max-width:799px) {
+    #general_info {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first_container {
+        margin: 20px 20px 0 20px;
+    }
+    #first_general {
+        width: 100%;
+    }
+
+    .first_container {
+        width: 50%;
+    }
+    .single h3::after {
+        content: none;
+    }
+    .group h3::after {
+        content: none;
+    }
+    .small_article .small_title {
+        font-size: 15px;
+    }
+    .first_container .single .single_des {
+        text-align: justify;
+    }
+    #second_general {
+        width: 100%;
+    }
+   #second_general .second_container .circle_gp {
+        display: flex;
+        flex-wrap: wrap;
+   } 
+   .group .circle {
+        width: 50%;
+   }
+}
+
+/* =================================== For Health & Education Article  ============================================== */
+#health_education_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+.article{
+     width: 100%;
+     margin-top: 20px;
+}
+.advertisement{
+    width: 48%;
+}
+.health_title{
+    color: #000;
+}
+.advertisement_title{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.advertise_img{
+    margin-top: 20px;
+}
+.advertise_title{
+    color: #000;
+}
+.article_title{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    margin: auto;
+}
+.edu_description{
+    color: #000;
+    word-spacing: 12px;
+    width: 100%;
+}
+.edu_title{
+    color: #000;
+    word-spacing: 12px;
+}
+.article_type{
+    color: #000;
+    word-spacing: 12px;
+}
+.article_row{
+    display: flex;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+.article_row1{
+    display: flex;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+.article_image{
+    width: 200px;
+    height: 150px;
+}
+.article_container{
+    width: 100%;
+}
+.article_text{
+    padding-left: 16px;
+}
+.item {
+    background-color: rgba(22, 9, 9, 0.773);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
