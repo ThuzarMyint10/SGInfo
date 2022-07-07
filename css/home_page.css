@@ -1,8 +1,4 @@
- 
-
-
-* {
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+ * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -44,9 +40,7 @@ body{
    margin: 0 auto;
 }
 
-section {
-    padding: 0.5rem 0;
-}
+
     
 section h2{
    text-align: center;
@@ -89,258 +83,8 @@ img{
 }
 
 
-/* =============== Header Start ==============*/
-#header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background: #4A9BE3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-#header a{
-    color: var(--color-white);
-    text-decoration: none;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar li{
-    list-style-type: none;
-    padding: 0 20px;
-    position: relative;
-}
-.navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-white);
-    transition: 0.3s ease;
-
-}
-.navbar li a:hover,
-.navbar li a.active
-{
-    color: #F6D106;
-}
-.navbar li a.active::after,.navbar li a:hover::after{
-    content:"";
-    width: 30%;
-    height: 2px;
-    background: #F6D106;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-/* Home Page*/
-#hero h1{
-     color:var(--color-white);
-     margin-bottom: 15px;
-}
-
-#hero p{
-    margin: 1rem 0 2rem;
-    color:var(--color-white);
-
-}
-
-.banner-btn{
-	background-color: transparent;
-   
-}
-.banner-btn a{
-	width: 150px;
-	text-decoration: none;
-	display: inline-block;	
-	padding: 12px 0;
-	color: #fff;
-	border: .5px solid #fff;
-	position: relative;
-	transition: color 0.5s;
-    text-align: center;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #4A9BE3;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-   
-
-}
-.banner-btn a:hover{
-    display: inline-block;
-	text-decoration-color: #F6D106;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #87bceb;
-	z-index: -1;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-}
-.banner-btn a:hover{
-	color: var(--color-warning);
-    font-weight: bold;
-}
 
 
-h2 {
-    font-size: 2rem;
-}
-
-.job {
-    font-size: 24px;
-    color:gold;/*var(--color-warning);*/
-    text-align: center;
-    padding: 1.5rem 0;
-}
-
-h4 {
-    font-size: 1.3rem;
-}
-
-a {
-    color: var(--color-black);
-}
-#header a{
-    color: var(--color-white);
-    text-decoration: none;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar li{
-    list-style-type: none;
-    padding: 0 20px;
-    position: relative;
-}
-.navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-white);
-    transition: 0.3s ease;
-
-}
-.navbar li a:hover,
-.navbar li a.active
-{
-    color: #F6D106;
-}
-.navbar li a.active::after,.navbar li a:hover::after{
-    content:"";
-    width: 30%;
-    height: 2px;
-    background: #F6D106;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-/* Home Page*/
-#hero h1{
-     color:var(--color-white);
-     margin-bottom: 15px;
-}
-
-#hero p{
-    margin: 1rem 0 2rem;
-    color:var(--color-white);
-
-}
-
-.form {
-    margin: 5px 40px 5px 0;
-}
-.banner-btn{
-	background-color: transparent;
-   
-}
-.banner-btn a{
-	width: 150px;
-	text-decoration: none;
-	display: inline-block;	
-	padding: 12px 0;
-	color: #fff;
-	border: .5px solid #fff;
-	position: relative;
-	transition: color 0.5s;
-    text-align: center;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #4A9BE3;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-   
-
-}
-.banner-btn a:hover{
-    display: inline-block;
-	text-decoration-color: #F6D106;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #87bceb;
-	z-index: -1;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-}
-.banner-btn a:hover{
-	color: var(--color-warning);
-    font-weight: bold;
-}
-
-.form input {
-    padding-left: 20px;
-}
-
-.normal {
-    font-size: 14px;
-    font-weight: 300;
-    padding: 15px 20px;
-    color: #000;
-    background-color: #f7c94b;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
 
 
    
@@ -491,10 +235,7 @@ footer .copyright {
         width: 50%;
     }
     
-section {
-    padding:1rem ;
-    
-}
+
 
 .form{
     text-decoration: #000;
@@ -517,18 +258,6 @@ section {
 
     padding-left: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -731,7 +460,7 @@ a.room-detail:hover{
 }
 
 .uil{
-    color: #554848;
+    color: #ffff;
     display: inline-block;
 }
 
@@ -1045,15 +774,6 @@ a.room-detail:hover{
 }
 
 /* ============END OF HOME JOBS=============== */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1465,6 +1185,105 @@ a.room-detail:hover{
     width: 100%;
     height: auto;
   }
+
+
+/*=================== START Navbar & Carousel TDTZ ===================*/
+.bg_blue{
+    background-color: #4A9BE3;
+}
+/* navitem logoimg */
+.logoimg{
+    width: 20px;
+    height: 20px;
+}
+.info{
+    color: gold;
+}
+nav a:hover{
+	
+	color:gold !important;
+}
+.slider{
+    height: 500px;
+}
+.carousel_text{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    z-index: 1;
+    color: white;
+}
+
+.banner-btn{
+	background-color: transparent;
+   
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	transition: color 0.5s;
+    text-align: center;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4A9BE3;
+    z-index: -1;
+   transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+    display: inline-block;
+	color: goldenrod;
+    font-weight: bold;    
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel_text{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        z-index: 1;
+        color: white;
+        
+    }
+    .banner-btn{
+        margin-top: 30px;
+    }
+    .carousel_para{
+        display: none;
+    }
+}
+/*========= overlay =======*/
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.7);
+    opacity: .5;
+  }
+
+/*=================== END Navbar & Carousel TDTZ ===================*/
+
+
+
+
+
 
   
 

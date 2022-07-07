@@ -15,32 +15,32 @@
     <!-- start nav -->
   <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
       <div class="container-fluid mx-lg-5">
-        <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
+        <a class="navbar-brand" href="Home_page.html">SG<b class="info">info</b></a>
         <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ms-lg-4">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="Home_page.html">Home</a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href="#">Rooms</a>
+              <a class="nav-link active" href="#">Rooms</a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href="#">General</a>
+              <a class="nav-link active" href="#">General</a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href="Job.html">Jobs</a>
+              <a class="nav-link active" href="Job.html">Jobs</a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href="Contact.html">Meet Us</a>
+              <a class="nav-link active" href="Contact.html">Contact Us</a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href=""><i class="fa-regular fa-user"></i></a>
+              <a class="nav-link active" href=""><i class="fa-regular fa-user"></i></a>
             </li>
             <li class="nav-item  ms-lg-4">
-              <a class="nav-link" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+              <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
             </li>
           </ul>
         </div>
@@ -48,40 +48,43 @@
   </nav>
   <!-- end nav -->
   <body>
-    <h3 class="info-fill mt-5">Fill Your Information</h3>
+    <div class="py-5 title-text">
+        <p class="text-center text-primary " style="font-size: 24px;">Fill Your Information</p>
+    </div>
+    <!-- <h3 class="info-fill mt-5">Fill Your Information</h3> -->
         <div class="container mb-5">
             <div class="row">
-                <div class="offset-1 offset-md-2 col-11 col-md-8">
-                    <div class="card shadow mt-4">
+                <div class="offset-md-2 col-12 col-md-8">
+                    <div class="card shadow">
                         <div class="card-body mt-4">
                             <form method="#" action="#" enctype="multipart/form-data">
                                 <div class="form-group row">
-                                    <label for="name" class="offset-md-1 col-sm-2 col-form-label">Position</label>                         
-                                        <div class="col-sm-8">
+                                    <label for="name" class="offset-md-1 col-sm-3 col-form-label">Position</label>                         
+                                        <div class="col-sm-7">
                                         <input type="text" name="name" class="form-control" id="name" readonly="readonly" value="C# Developer">
                                         </div>
                                 </div>
                                 <div class="form-group row mt-4">
-                                    <label for="name" class="offset-md-1 col-sm-2 col-form-label">Name</label>                         
-                                        <div class="col-sm-8">
+                                    <label for="name" class="offset-md-1 col-sm-3 col-form-label">Name</label>                         
+                                        <div class="col-sm-7">
                                         <input type="text" name="name" class="form-control " id="name" value="">
                                         </div>                          
                                 </div>
                                 <div class="form-group row mt-4">
-                                    <label for="staticEmail" class="offset-md-1 col-sm-2 col-form-label">Email</label>
-                                        <div class="col-sm-8">
+                                    <label for="staticEmail" class="offset-md-1 col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-7">
                                         <input type="email" class="form-control " id="staticEmail" name="email" value="">
                                         </div>
                                 </div>
                                 <div class="form-group row mt-4">
-                                    <label for="phone" class="offset-md-1 col-sm-2 col-form-label">Phone Number</label>
-                                        <div class="col-sm-8">
+                                    <label for="phone" class="offset-md-1 col-sm-3 col-form-label">Phone Number</label>
+                                        <div class="col-sm-7">
                                         <input type="number" class="form-control " id="phone" name="phone" value="">
                                         </div>
                                 </div>
                                 <div class="form-group row mt-3">
-                                    <label for="cv" class="offset-md-1 col-sm-2 col-form-label">CV_File</label>
-                                        <div class="col-sm-8">
+                                    <label for="cv" class="offset-md-1 col-sm-3 col-form-label">CV_File</label>
+                                        <div class="col-sm-7">
                                         <input type="file" accept=".pdf,.docx,.doc" class="form-control-file " id="cv" name="cv_file">
                                         </div>
                                 </div>
