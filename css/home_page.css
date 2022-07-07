@@ -461,7 +461,7 @@ a.room-detail:hover{
 }
 
 .uil{
-    color: #fffff;
+    color: #ffff;
     display: inline-block;
 }
 
@@ -790,15 +790,6 @@ a.room-detail:hover{
 
 
 
-
-
-
-
-
-
-
-
-
 /*========= ==========  ======= Travel Guides Slider ======  =========== ==================*/
 
 .travel_guide {
@@ -816,7 +807,7 @@ a.room-detail:hover{
     overflow: hidden;
     scroll-behavior: smooth;
     margin: 16px;
-    padding: 28px;jobbackground_color
+    padding: 28px;
     }
     .swiper-wrapper {
     margin: 16px;
