@@ -8,8 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/general_info.css">
   <link rel="stylesheet" href="css/present_restaurant.css">
-  <link rel="stylesheet" href="css/home_page.css">
+  <!-- <link rel="stylesheet" href="css/home_page.css"> -->
   <link rel="stylesheet" href="css/general_info.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 </head>
@@ -143,7 +144,7 @@
       <div class="globel_news_box">
         <div class="background_color">
           <p class="news_type news_type1">Travel</p>
-          <h4 class="news_title news_title1">Where is The Best Present In Singapore</h4>
+          <h4 class="news_title news_title1">Where is The Best Present In Singapore, Let's purchase a lot of presents</h4>
           <caption class="journalist">Mrs Christ - June 3, 2020</caption>
         </div>
       </div>
@@ -170,7 +171,7 @@
         <div class="globel_news_box2 globel_news_box5">
           <div class="background_color">
             <p class="news_type">Travel</p>
-            <h4 class="news_title">This Place is Very Instering . We Should Go There</h4>
+            <h4 class="news_title">This Place is Very Instering,We Should Go There immediately!</h4>
           </div>
         </div>
       </div>
@@ -217,23 +218,31 @@
 
     <div class="advertisement">
       <div class="advertisement_title">
-        <hr style="width:15%" , size="5" , color=darkblue />
+        <hr style="width:30%" , size="10" , color=darkblue />
         <span class="advertise_title">Advertisement</span>
-        <hr style="width:15%" , size="5" , color=darkblue />
+        <hr style="width:30%" , size="10" , color=darkblue />
       </div>
       <!--Bootstrap card with slider class-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
+        <div id="three_dots">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+      </div>
+        <div class="adertise_carousel_text">
+          <h5>NEWSPAPER</h5>
+          <p>The art of puplishing.</p>
+          <h6>THE MOST POPULAR NEWS MAGAZINE THEME</h6>
+          <button class="buynow_btn">Buy Now</button>
+        </div>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="./images/general_images/travel-02.jpg" alt="Los Angeles" style="width:100%;">
+            <img src="./images/general_images/fashion.jpg" alt="Los Angeles" style="width:100%;">
           </div>
 
           <div class="item">
@@ -256,9 +265,7 @@
         </a>
 
       </div>
-      <div class="adertise_carousel_text">
-        <p>Welcome to our Brand</p>
-      </div>
+     
       <!-- <img src="./images/general_images/beach.avif" alt="" class="advertise_img"> -->
     </div>
 
@@ -266,25 +273,74 @@
 
   <!-- ============================ End of Health & Education Article ============================= -->
 
+ <!-- ======================== Travel Guide ============================= -->
 
-  <!-- <section id="middle_container">
-          <div class="single">
-            <h3>PRESENTS</h3>
-            <img src="images/present_images/present_1.jpg" alt="gift_box">
-            <h5>PRESENT</h5>
-            <div class="single_des">
-              <h4>Handi Shop</h4>
-              <span><strong>Mr Harry</strong> - June 30, 2022</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae, repellat odit dolore recusandae
-                exercitationem officiis similique.</p>
-            </div>
-          </div>
-        </section> -->
+ <section class="swiper-container mySwiper">
+  <div class="travel_guide">
+    <h1>Travel Guides</h1>
+  </div>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-02.jpg" alt="">
+      <div class="overlay">
+        <p>French</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-03.jpg" alt="">
+      <div class="overlay">
+        <p>Myanmar</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-04.jpg" alt="">
+      <div class="overlay">
+        <p>America</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-12.jpg" alt="">
+      <div class="overlay">
+        <p>Japan</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-03.jpg" alt="">
+      <div class="overlay">
+        <p>Korea</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-13.jpg" alt="">
+      <div class="overlay">
+        <p>China</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-02.jpg" alt="">
+      <div class="overlay">
+        <p>Singapore</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/general_images/travel-12.jpg" alt="">
+      <div class="overlay">
+        <p>Malisia</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div> -->
+  <div class="swiper-pagination"></div>
+</section>
 
-  <!-- end of moh's general -->
+<!-- ============================= End of Travel Guide Slider ========================================== -->
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
