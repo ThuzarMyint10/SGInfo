@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Detail</title>
-    <link rel="stylesheet" href="css/room_detail.css">
+    <title>Room List</title>
+    <link rel="stylesheet" href="css/room_list.css">
     <link rel="stylesheet" href="css/home_page.css">
     <!-- iconscout cdn -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -22,11 +21,8 @@
     <!-- JS -->
     <script src="jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
     <!-- =============================== Nav Bar ===================================== -->
@@ -427,378 +423,227 @@
     </div>
                   
 
+
     <!-- =============================== Main Content ===================================== -->
     <section id="main">
-        <section id="left">
-            <div class="view">
-                <div class="title">
-                    <div class="title-left">
-                        <h1 class="title-h1">EMERALD GARDEN</h1>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <small>8 views</small>
-                        <small>Space: 306 sqft    </small>
-                        <!-- <small>Max. 8 guests</small> -->
-                    </div>
-                    <div class="title-right">
-                        <p>from</p>
-                        <h3 class="title-right-h3">$149.00 USD / month</h3>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="image">
-                    <div class="img-large">
-                        <img class="img-large-each" src="images/room_detail/1-detail.jpg" alt="">
-                    </div>
-                    <div class="img-small">
-                        <img class="img-small-each" src="images/room_detail/2-detail.jpg" style="width: 24%;" alt="">
-                        <img class="img-small-each" src="images/room_detail/3-detail.jpg" style="width: 24%;" alt="">
-                        <img class="img-small-each" src="images/room_detail/4-detail.jpg" style="width: 24%;" alt="">
-                        <img class="img-small-each" src="images/room_detail/5-detail.jpg" style="width: 24%;" alt="">
-                    </div>
-                </div>
-                <!-- room detail -->
-                <div class="room-detail">
-                    <h1 class="overview-h1">ROOM DETAIL</h1>
-                    <div class="room-detail-list">
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Property Type</label>
-                            <input type="text" class="room-detail-input" value="Condiminium For Rent">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Floor size</label>
-                            <input type="text" class="room-detail-input" value="306 sqft">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Developer</label>
-                            <input type="text" class="room-detail-input" value="Clementi Development Pte Ltd">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Bed and Bath rooms</label>
-                            <input type="text" class="room-detail-input" value="5 bed & 3 bath rooms">
-                            
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Floor Level</label>
-                            <input type="text" class="room-detail-input" value="Ground Floor">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">PSF</label>
-                            <input type="text" class="room-detail-input" value="S$ 5.16 psf">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Availability</label>
-                            <input type="text" class="room-detail-input" value="Ready to move">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Rent or Sale</label>
-                            <input type="text" class="room-detail-input" value="For rent">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Address</label>
-                            <input type="text" class="room-detail-input" value="55 Lengkong Empat 417642 Eunos / Geylang / Paya Lebar (D14)">
-                        </div>
-                        <div class="room-detail-each">
-                            <label class="room-detail-label" for="">Nearest MRT/LRT</label>
-                            <input type="text" class="room-detail-input" value="11 mins (860 m) to EW6 Kembangan MRT">
-                        </div>
-                    </div>
-                </div>
-                <!-- room overview -->
-                <div class="overview">
-                    <h1 class="overview-h1">ROOM OVERVIEW</h1>
-                    <p class="overview-p">
-                        All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day.
-                    </p>
-                    <p class="overview-p">
-                        Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p class="overview-p">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                    </p>
-                </div>
-                <div class="line"></div>
-                <!-- amentities -->
-                <div class="amenities">
-                    <h1>FACILITIES & AMENITIES</h1>
-                    <div class="amenities-group">
-                        <div class="amentities-item">
-                            <h4 class="amentities-h4">Key Features</h4>
-                            <ul class="amentities-ul">
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Bed</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Dryer</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Internet connection</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Oven / Microwave</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Dining Room Furniture</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Washing Machin</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Kitchen Utensils</li>
-                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Fridge</li>
-                            </ul>
-                        </div>
-                        <div class="amentities-item">
-                            <h4 class="amentities-h4">Facilities</h4>
-                            <ul class="amentities-ul">
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Barbeque Area</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Gymnasium room</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Squash court</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Tennis courts</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Covered Car Park</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Fitness corner</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Playground</li>
-                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Swimming Pool</li>
-                            </ul>
-                        </div>
-<!-- 
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/hair-dryer.svg" style="width: 15%;" alt="">
-                            <p>Hair Dryer</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/savings.svg" style="width: 15%;" alt="">
-                            <p>Saving Safe</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/bathtub.svg" style="width: 15%;" alt="">
-                            <p>Bathtub</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/wifi.svg" style="width: 15%;" alt="">
-                            <p>High speed Wifi</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/tv.svg" style="width: 15%;" alt="">
-                            <p>Cable TV</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/telephone.svg" style="width: 15%;" alt="">
-                            <p>Cable TV</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/laundry.svg" style="width: 15%;" alt="">
-                            <p>Laundry</p>
-                        </div>
-                        <div class="amentities-item">
-                            <img class="amentities-img" src="images/room_detail/towel.svg" style="width: 15%;" alt="">
-                            <p>Towels</p>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- room rule -->
-                <!-- <div class="room-rule">
-                    <h1>ROOM RULES</h1>
-                    <div class="part1">
-                        <div class="part1-left">
-                            <h2 class="part1-left-h2">Check-in</h2>
-                            <ol>
-                                <li class="part1-left-li">Check-in from 9:00 AM - anytime</li>
-                                <li  class="part1-left-li">Early check-in subject to availability</li>
-                                <li  class="part1-left-li">Minimum check-in age - 18</li>
-                            </ol>
-                        </div>
-                        <div class="part1-right">
-                            <h2 class="part1-right-h2">Check-out</h2>
-                            <ol>
-                                <li  class="part1-right-li"> Check-out before noon</li>
-                                <li  class="part1-right-li">  Express check-out </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="special">
-                        <h4>Special check-in instructions</h4>
-                        <p>Guests will receive an email 5 days before arrival with check-in instructions; front desk
-                            staff will greet guests on arrival For more details, please contact the property using the
-                            information on the booking confirmation.</p>
-                    </div>
-                    <div class="special">
-                        <h4>Pets</h4>
-                        <p>Pets are not allowed</p>
-                    </div>
-                    <div class="special">
-                        <h4>Trip Grade: Fitness level, Medical, and Health</h4>
-                        <p>The 14-days Everest Base Camp Trek is challenging; but rewarding. Anyone can accomplish this
-                            trek. However, a bit of preparedness is vital to complete this challenging trip.</p>
-                    </div>
-                    <div class="special">
-                        <h4>Children and extra beds</h4>
-                        <p>Children are welcome Kids stay free! Children stay free when using existing bedding; children
-                            may not be eligible for complimentary breakfast Rollaway/extra beds are available for EUR
-                            40.0 per day</p>
-                    </div>
+        <!-- hero -->
+        <div class="hero-room-list">    
+        </div>
 
-                </div> -->
-                <div class="line"></div>
-                <!-- other room -->
-                <div class="other-room-main">
-                    <h1 style="margin-bottom: 20px;">SIMILAR ROOM</h1>
-                    <div class="other-room">
-                        <div class="other-room-left">
-                            <a href=""><img class="other-room-left-img" src="images/room_detail/other-room-left.jpg" style="width: 90%;" alt=""></a>
-                            <h2 class="other-room-h2">FRANKEL ESTATE</h2>
-                            <small class="other-room-small">Space: 135 sqft  |  </small>
-                            <small class="other-room-small">$13,800 USD /month</small>
-                        </div>
-                        <div class="other-room-right">
-                            <a href=""><img class="other-room-right-img" src="images/room_detail/other-room-right.jpg" style="width: 90%;" alt=""></a>
-                            <h2 class="other-room-h2">SPRING GROVE</h2>
-                            <small class="other-room-small">Space: 306 sqft  |  </small>
-                            <small class="other-room-small">$13,800 USD/month</small>
-                        </div>
-                    </div>
+        <!-- main content -->
+        <div class="main-content">
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_1.jpg" class="main-content-real-img" alt="">
                 </div>
-                <!-- review -->
-                <div class="review-main">
-                    <div class="review">
-                        <h1 class="review-h1">REVIEWS</h1>
-                        <div class="line"></div>
-                        <div class="review-detail">
-                            <img class="review-detail-img" src="images/room_detail/user.png"  alt="">
-                            <div class="review-detail-div">
-                                <h3 class="review-h3">Elicia</h3>
-                                <small>April 29,2022</small>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                                <small>8 views</small>
-                                <p class="review-detail-p">This is exactly what i was looking for, thank you so much for these tutorials</p>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="review-detail">
-                            <img src="images/room_detail/user.png" class="review-detail-img" alt="">
-                            <div class="review-detail-div">
-                                <h3 class="review-h3">Saimon</h3>
-                                <small>April 29,2022</small>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                                <small>8 views</small>
-                                <p class="review-detail-p">It would be great to try this theme for my businesses</p>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="review-detail">
-                            <img src="images/room_detail/user.png" class="review-detail-img" alt="">
-                            <div class="review-detail-div">
-                                <h3 class="review-h3">David</h3>
-                                <small>April 29,2022</small>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                                <small>8 views</small>
-                                <p class="review-detail-p">It would be great to try this theme for my businesses</p>
-                            </div>
-                        </div>
-                        <button class="older-comment-btn">Older Comments</button>
-
-                        <!-- reply -->
-                        <h1 style="font-size: 25px; font-weight:bolder;">LEAVE A REPLY</h1>
-                        <div class="reply">
-                            <p>Your email address will not be published. Required fields are marked *</p>
-                            <form action="" >
-                                <label for="name">Your Name</label>
-                                <input class="reply-input" type="text" id="name" placeholder="">
-                                <label for="email">Email</label>
-                                <input class="reply-input" type="text" id="email" placeholder=""> <br><br>
-                                <textarea name="" id="" cols="62" rows="7" class="reply-textarea" placeholder="Comment here ..."></textarea>
-                                <p><input type="checkbox" name="" class="reply-input-check"> Save my name, email, and website in this browser for the next time I comment.</p>
-                                <button class="post-btn">Post Comment</button>
-                            </form>
-                        </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft | </small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD /month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
                     </div>
                 </div>
             </div>
-            <!-- location -->
-            <div class="location">
-                <h1 class="location-h1">Location</h1>
-                <div class="location-main">
-                    <iframe class="loaction-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.006178408383!2d96.12405771495075!3d16.826049588417398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195c18b45f149%3A0x6487e3091f30ffb0!2sITVisionHub!5e0!3m2!1sen!2ssg!4v1657209173900!5m2!1sen!2ssg" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_2.jpg" class="main-content-real-img" alt="">
+                </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft |</small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD  /month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
+                    </div>
                 </div>
             </div>
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_3.jpg" class="main-content-real-img" alt="">
+                </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft |</small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD/month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_4.jpg" class="main-content-real-img" alt="">
+                </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft |</small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD/month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_5.jpg" class="main-content-real-img" alt="">
+                </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft |</small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD/month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-small">
+                <div class="main-content-img">
+                    <img src="images/room_list/room_list_1.jpg" class="main-content-real-img" alt="">
+                </div>
+                <div class="main-content-text">
+                    <div class="main-head">
+                        <h1 class="main-head-h1">Condominium</h1>
+                        <small class="main-head-small">135 sqft |</small>
+                        <small class="main-head-small">5&nbsp;<i class="fa-solid fa-bed"></i>&nbsp;&nbsp;3&nbsp;<i class="fa-solid fa-bath"></i></small>
+                    </div>
+                    <div class="line"></div>
+                    <div class="main-text">
+                        <p class="main-text-p">All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower,..</p>
+                        <p class="main-text-p2">From $153.00 USD/month</p>
+                    </div>
+                    <div class="main-btn">
+                        <a class="view-detail-btn" href="room_detail.html">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <section id="pagination" class="section-p1">
+            <a href="#" class="pagination-a"><i class="pagination-i fa-solid fa-arrow-left"></i></a>
+            <a href="#" class="pagination-a">1</a>
+            <a href="#" class="pagination-a">2</a>
+            <a href="#" class="pagination-a"><i class="pagination-i fa-solid fa-arrow-right"></i></a>
         </section>
 
+        <!-- New Letters -->
+        <div id="newsLetter">
+            <div class="newsText">
+                <h4 class="newsLetter-h4">SIGN UP FOR EXCLUSIVE OFFERS FROM US</h4>
+                <p class="newsLetter-p">Get E-mail updates about our latest rooms and <span class="newsLetter-span">special offers.</span></p>
+            </div>
+            <form class="newsLetter-form">
+                <input class="newsLetter-input" type="text" placeholder="Your Email Address">
+                <button class="newsLetter-btn">Sign Up</button>
+            </form>
+        </div>
 
-
-        <section id="right">
-            <div class="booking-room">
-                <div class="room">
-                    <h1 class="room-h1">CONTACT TO AGENT</h1>
-                    <form action="#" method="POST">
-                        <div class="formControl">
-                            <label class="booking-room-label" for="checkin">Name</label> <br>
-                            <input class="booking-room-input" type="text" placeholder="Enter your name">
-                        </div>
-                        <div class="formControl">
-                            <label class="booking-room-label" for="checkin">Email</label> <br>
-                            <input class="booking-room-input" type="text" placeholder="Enter your email">
-                        </div>
-                        <div class="formControl">
-                            <label class="booking-room-label" for="checkin">Phone</label> <br>
-                            <input class="booking-room-input" type="text" placeholder="Enter your phone">
-                        </div>
-                        <div class="form-Control">
-                            <label class="booking-room-label" for="checkin">Description</label> <br>
-                            <textarea class="booking-room-textarea" name="" id="" cols="30" rows="6" placeholder="say something about the room"></textarea>
-                        </div>
-                        <!-- <div class="formControl">
-                            <label for="children" class="booking-room-label">Property Type</label> <br>
-                            <select name="" id="" class="modal-select booking-room-select">
-                                <option value="0" class="modal-option" selected>select property type</option>
-                                <option value="1" class="modal-option" >Condominium</option>
-                                <option value="2" class="modal-option" >HDB</option>
-                                <option value="3" class="modal-option" >Corner Terrace</option>
-                                <option value="4" class="modal-option">Apartment</option>
-                            </select>
-                        </div> -->
-                       
-                        <!-- <div class="formControl">
-                            <label for="children" class="booking-room-label">Rental Fee</label> <br>
-                            <select name="" id="" class="modal-select booking-room-select">
-                                <option value="0" selected class="modal-option">select amount</option>
-                                <option value="1" class="modal-option">From $0 - $300</option>
-                                <option value="2" class="modal-option">From $300 - $500</option>
-                                <option value="3" class="modal-option">From $500 - $2000</option>
-                                <option value="4" class="modal-option">Above $2000</option>
-                            </select>
-                        </div> -->
-                        <button class="book-btn">I'm interested</button>
-                        <!-- <div class="extra">
-                            <h2>Add Extra</h2>
-                            <div>
-                                <input type="checkbox" name="" id="" class="extra-check">
-                                <span> Service per Booking</span>
-                                <span> $30.00</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="" id="" class="extra-check">
-                                <span style="width: 700px;"> Service per Person</span>
-                                <span> Adult: $17.00</span>
-                                <span> Children: included</span>
-                            </div>
-                            <div class="price">
-                                <p>Your Price</p>
-                                <p>$0.00</p>
-                            </div>
-                            <button class="book-btn" type="submit">Book Now</button>
-                        </div> -->
-                    </form>
+        <!-- Agent -->
+        <div class="agent">
+            <h1 class="agent-h1">Expat/Relocation Featured Agents</h1>
+            <div class="agent-main">
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent1.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
+                </div>
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent2.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
+                </div>
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent1.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
+                </div>
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent2.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
+                </div>
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent1.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
+                </div>
+                <div class="agent-each">
+                    <div class="agent-main-img">
+                        <img src="images/room_list/agent2.jpg" class="agent-img" alt="">
+                    </div>
+                    <div class="agent-text">
+                        <h3 class="agent-h3">Shak Ling</h3>
+                        <p class="agent-p">IT Vision Hub</p>
+                        <p class="agent-p"><i class="agent-i fa-solid fa-phone"></i>+65 4826 1593</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
+        </div>
     </section>
+    
 
-
-
+    
     <script src="main.js"></script>
 </body>
-
 </html>
