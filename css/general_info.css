@@ -172,6 +172,7 @@
     display: flex;
     justify-content: space-between;
     margin: 16px;
+    
 }
 .article{
      width: 100%;
@@ -179,6 +180,7 @@
 }
 .advertisement{
     width: 48%;
+    margin-top: 6px;
 }
 .health_title{
     color: #000;
@@ -188,7 +190,7 @@
     justify-content: space-between;
     margin: auto;
 }
-.advertise_img{
+.advertisement_container{
     margin-top: 20px;
 }
 .advertise_title{
@@ -234,52 +236,25 @@ hr{
 .article_text{
     padding-left: 16px;
 }
-.carousel-indicators{
-    position: absolute;
-    z-index: 15;
-    bottom: -5px;
-    color: yellow;
+.img_slider{
+    height: 300px;
 }
-.carousel-indicators {
-    bottom: -5px;
-  }
 .adertise_carousel_text{
     position: absolute;
-    bottom: 20%;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
+    bottom: 15%;
+    width: 100%;
+    align-items: center;
+    z-index: 15; 
     text-align: center;
-    list-style: none;
     color: white;
 }
-/* .three_dots{
-    bottom: -50px;
-    background-color: #000;
-    color: pink;
-
-} */
 .buynow_btn {
     background-color: rgba(0, 0, 0, 0.792);
     padding: 8px;
     margin: 10px;
+    color: white;
 }
 
-.carousel-indicators li {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-bottom: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: red;
-    background-color: rgba(170, 205, 11, 0);
-    border: 100px solid green;
-    border-radius: 5px;
-    padding-bottom: 5px;
-}
 @media (max-width:799px) {
     #health_education_container{
         display: block;

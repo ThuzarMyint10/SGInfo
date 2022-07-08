@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.desc{
+    margin-top: 5px;
+}
+
+#globel_news_details{
+    margin: 50px;
+}
+
+.uil{
+    color: black;
+    margin-top: 5px;
+}
+#news_type{
+    display: flex;
+    margin: auto;
+}
+#news_title{
+    margin-top: 16px;
+}
