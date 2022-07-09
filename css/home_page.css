@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
-
-
-* {
+ * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -38,17 +35,12 @@ body{
    
     /* background: var(--color-bg); */
 }
-
-
-
 .container{
    width: var(--container-width-lg);
    margin: 0 auto;
 }
 
-section {
-    padding: 0.5rem 0;
-}
+
     
 section h2{
    text-align: center;
@@ -91,161 +83,8 @@ img{
 }
 
 
-/* =============== Header Start */
-#header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background: #4A9BE3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
 
-h1 {
-    font-size: 2.4rem;
-}
 
-h2 {
-    font-size: 2rem;
-}
-
-.job {
-    font-size: 24px;
-    color:gold;/*var(--color-warning);*/
-    text-align: center;
-    padding: 1.5rem 0;
-}
-
-h4 {
-    font-size: 1.3rem;
-}
-
-a {
-    color: var(--color-black);
-}
-#header a{
-    color: var(--color-white);
-    text-decoration: none;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar li{
-    list-style-type: none;
-    padding: 0 20px;
-    position: relative;
-}
-.navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-white);
-    transition: 0.3s ease;
-
-}
-.navbar li a:hover,
-.navbar li a.active
-{
-    color: #F6D106;
-}
-.navbar li a.active::after,.navbar li a:hover::after{
-    content:"";
-    width: 30%;
-    height: 2px;
-    background: #F6D106;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-/* Home Page*/
-#hero h1{
-     color:var(--color-white);
-     margin-bottom: 15px;
-}
-
-#hero p{
-    margin: 1rem 0 2rem;
-    color:var(--color-white);
-
-}
-
-.form {
-    margin: 5px 40px 5px 0;
-}
-.banner-btn{
-	background-color: transparent;
-   
-}
-.banner-btn a{
-	width: 150px;
-	text-decoration: none;
-	display: inline-block;	
-	padding: 12px 0;
-	color: #fff;
-	border: .5px solid #fff;
-	position: relative;
-	transition: color 0.5s;
-    text-align: center;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #4A9BE3;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-   
-
-}
-.banner-btn a:hover{
-    display: inline-block;
-	text-decoration-color: #F6D106;
-    
-}
-.banner-btn a span{
-	width: 0;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #87bceb;
-	z-index: -1;
-	transition: 0.5s;
-}
-.banner-btn a:hover span{
-	width: 100%;
-}
-.banner-btn a:hover{
-	color: var(--color-warning);
-    font-weight: bold;
-}
-
-.form input {
-    padding-left: 20px;
-}
-
-.normal {
-    font-size: 14px;
-    font-weight: 300;
-    padding: 15px 20px;
-    color: #000;
-    background-color: #f7c94b;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
 
 
    
@@ -329,65 +168,6 @@ a {
     margin-right: 2rem;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #000;
-    background-color: #fff;
-    
-}
-
-footer .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-
-footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-}
-
-footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-
-.icon{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color:blue;
-    font-size: 1.5rem;
-    
-}
- .section-footer .a :hover,
-footer a:hover{
-    color: #f7c94b;
-} 
-
-footer .copyright {
-    text-align: center;
-    /* border-top: 1px solid var(--color-bg2); */
-    margin-top: 1rem;
-    padding:16px;
-    width: 100%;
-    
-    
-    
-}
-.section-footer{
-    padding:40px 100px;
-}
 
 
 @media(max-width:799px){
@@ -396,10 +176,7 @@ footer .copyright {
         width: 50%;
     }
     
-section {
-    padding:1rem ;
-    
-}
+
 
 .form{
     text-decoration: #000;
@@ -422,18 +199,6 @@ section {
 
     padding-left: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -495,7 +260,6 @@ section {
 
 #home-room {
     background-color: #ffff;
-    height: 90vh;
     text-align: center;
     padding: 40px 80px;
     position: relative;
@@ -521,12 +285,12 @@ a.room-detail:hover{
 
 #home-room a::after {
     content: "";
-    width: 50px;
-    height: 1.5px;
+    width: 3rem;
+    height: 0.15rem;
     background-color: #fab702;
     position: absolute;
-    top: 138px;
-    right: 590px;
+    top: 135px;
+    right: 580px;
 }
 
 #home-room-container {
@@ -550,7 +314,7 @@ a.room-detail:hover{
     border: 0;
     top: 0;
     border-top: 1px solid rgba(204, 204, 204, 0.6);
-    padding: 5px 10px;
+    padding: 2px 10px;
 }
 
 #home-room .home-room-sample {
@@ -609,7 +373,14 @@ a.room-detail:hover{
     border-color: var(--color-white);
 }
 
+
+/* =========== HOME JOBS ============== */
+
+#home_jobs{
+    background-color: var(--color-bg);
+}
 .jobs_header {
+    padding-top: 3rem;
     text-align: center;
     width: 100%; 
     margin-top: 1rem;
@@ -623,15 +394,14 @@ a.room-detail:hover{
 .search_icon{
     border-color: yellow;
     border-style: dashed;
-    background-color: #fff;
+    background-color: #bcd8f0;
     width: 20rem;
     height: 2.8rem;
     border-radius: 0.3rem;
-
 }
 
 .uil{
-    color: #4A9BE3;
+    color: #ffff;
     display: inline-block;
 }
 
@@ -644,7 +414,7 @@ a.room-detail:hover{
     padding-left: 0rem;
     /* margin-right: 2rem; */
     width: 15rem;
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
 #location{
@@ -655,7 +425,7 @@ a.room-detail:hover{
     /* margin-left: 1rem; */
     width: 15rem;
     /* padding-left: 1rem; */
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
 #jobs_categories{
@@ -668,10 +438,14 @@ a.room-detail:hover{
     width: 15rem;
     /* padding-left: 1rem; */
     padding-right: 2rem;
-    background-color: #fff;
+    background-color: #bcd8f0;
 }
 
-/* .jobs_option:hover {background-color: green; } */
+     .aaa:hover{
+    background-color: #090E6A;
+    color: #554848;
+    font-size: 30px;
+}
 
 .search{
     font-size: 15px;
@@ -680,13 +454,19 @@ a.room-detail:hover{
     /* margin-left: 1rem; */
     /* width: max-content; */
     cursor: pointer;
-    background-color: #f7c94b;
+    background-color: #e60078;
     width: 8rem;
     border-radius: 0.4rem;   
 }
 
 .search a{
+    color: #bcd8f0;
+    text-decoration: none;
+}
+
+.search a:hover{
     color: #554848;
+    text-decoration: underline;
 }
 
 #jobs_container{
@@ -707,7 +487,7 @@ a.room-detail:hover{
 
 #h2{
     font-family: 'Roboto', sans-serif;
-    color: #f7c94b;
+    color: rgb(247, 201, 75);
     text-align: center;
     margin-top: 2.5rem;
 }
@@ -737,9 +517,13 @@ a.room-detail:hover{
     padding: 10px 16px;
 }
 
+
+
 #jobs_type a{
     color: #554848;
+    text-decoration: none;
 }
+
 
 .browse{
     font-size: 15px;
@@ -749,25 +533,44 @@ a.room-detail:hover{
     width: max-content;
     margin-top: 1rem;
     cursor: pointer;
-    background-color: #4A9BE3;
+    /* background-color: #4A9BE3; */
+    background-color: rgb(247, 201, 75);
     width: 10rem;
     border-radius: 0.3rem;
-    margin-bottom:2.5rem;
     margin: 0 auto;
     display: block;
+    margin-bottom: 1.2em;
 }
 
 .browse a{
     color: #554848;
     text-align: center;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 799px){
+.browse a:hover{
+    color: #bcd8f0;
+    text-decoration: none;
+    text-shadow: rgba(216, 216, 216, 0.1);
+}
+
+@media only screen and (max-width: 989px){
     .jobs_header{
         width: 100%;
         /* margin-right: 16px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 1.9rem;
     }
 
+    .search_icon{
+        width: 92%;
+        
+        margin-bottom: 0.5rem;
+        /* margin-left: 1rem; */
+        
+    }
+    
     #search_jobs{
         width: 90%;
         margin-bottom: 0.5rem;
@@ -789,8 +592,9 @@ a.room-detail:hover{
     }
 
     .search{
-        width: 30%;
+        width: 21%;
         margin-top: 0.5rem;
+        margin-left: 33%;
     }
 
     .jobbackground_color{
@@ -817,13 +621,10 @@ a.room-detail:hover{
     }
 
     .browse{
-        /* width: 30%; */
-        margin-left: 13rem;
+        margin-left: 40%;
     }
 
 }
-
-
 
 
 @media only screen and (max-width: 477px){
@@ -884,6 +685,10 @@ a.room-detail:hover{
         text-align: center;
     }
 
+    .jobbackground_color a{
+        text-decoration: none;
+    }
+
     /* #jobs_type{
         margin: 0;
         padding: 9px 0 9px 0;
@@ -903,38 +708,13 @@ a.room-detail:hover{
     padding-bottom: 0.1rem;
 }
 
-
-
     .browse{
         margin-left: 6rem;
     }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ============END OF HOME JOBS=============== */
 
 /*========= ==========  ======= Travel Guides Slider ======  =========== ==================*/
 
@@ -944,27 +724,22 @@ a.room-detail:hover{
 }
 
 .swiper-container {
-    width: 100%;
+    width: 97%;
     min-height: 300px;
     background: #bcd8f0;
-    /* display: flex;
-    justify-content: space-between; */
-    /* align-items: center; */
     overflow: hidden;
     scroll-behavior: smooth;
-    margin: 16px;
+    margin: 20px;
     padding: 28px;
- }
- .swiper-wrapper {
+    }
+    .swiper-wrapper {
     margin: 16px;
- }
+    }
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 200px;
     object-fit: cover;
-    /* object-position: center; */
-    /* border-radius: 0.5rem; */
     box-shadow: 8px 8px 11px rgba(216, 216, 216, 0.1);
   }
 
@@ -974,7 +749,7 @@ a.room-detail:hover{
     }
   }
   .overlay {
-    /* position: absolute; */
+    position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -1013,7 +788,6 @@ a.room-detail:hover{
   .swiper-slide:hover .overlay {
     bottom: 0;
     height: 100%;
-    /* opacity: 10; */
   }
 
 /*========= ==========  ======= End Of Travel Guides Slider ======  =========== ==================*/
@@ -1066,11 +840,9 @@ a.room-detail:hover{
 
 .news_title {
     text-align: start;
-    /* text-transform: uppercase; */
     letter-spacing: var(--mainSpacing);
     font-size: 1rem;
     color: #fff;
-    /* border: 1px solid var(--primaryColor); */
     transition: var(--mainTransition);
     cursor: pointer;
     padding-left: 16px;
@@ -1081,9 +853,26 @@ a.room-detail:hover{
 
   .background_color.journalist {
     position: absolute;
-    bottom: 6%;
+    bottom: -6%;
     text-align: start;
 
+  }
+
+  .trending_news {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 20px;
+  }
+
+  .trending_news p {
+    color: #000;
+    width: 30%;
+  }
+  .trending_news marquee {
+    color: #000;
+    width: 60%;
   }
 
 #globel_news_container2 {
@@ -1092,8 +881,8 @@ a.room-detail:hover{
     padding-left: 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
     position: relative;
 }
 
@@ -1123,39 +912,76 @@ a.room-detail:hover{
 }
 
 
-/*========= ==========  ======= End Of Globel News ======  =========== ==================*/
-.home-gen-info-container img {
-    width: 100%;
-    height: 70vh;
+@media(max-width: 799px){
+    
+#globel_news_container {    
+    display: block;
+    position: relative;
 }
+
+.globel_news_box {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#globel_news_container2 {
+    width: 100%;
+    margin-top: 16px;
+    height: 400px;
+}
+
+}
+
+
+@media(max-width: 477px){
+    
+.news_type {
+    bottom: 15%;
+  }
+    
+    }
+
+
+/*========= ==========  ======= End Of Globel News ======  =========== ==================*/
+
 .home-gen-info-container {
     position: relative;
+}
+.home-gen-info-container img {
+    width: 100%;
+    height: 25em;
 }
 
 .home-gen-info-det h4, .home-gen-list {
     color: #000;
 }
 
-.home-gen-info-det {
+.home-gen-info-container .home-gen-info-det {
     width: 35%;
-    height: 40vh;
+    height: 280px;
     background-color: #f7c94b;
+    position: absolute;
+    bottom: 5%;
     
 }
 .home-gen-info-det h4 {
     padding: 20px 15px;
 }
 
+.home-gen-list {
+    margin: 3px 0;
+}
+
 
 .home-gen-info-det .home-gen-list li {
-    list-style-type: circle;
-    padding-left: 20px;
+    padding-left: 10px;
     color: #000;
     line-height: 30px;
 }
 .home-gen-info-det {
     position: absolute;
-    top: 820px;
+    /* top: 820px; */
     right: 130px;
     background-position-x: 20%;
     background-position-y: 20%;
@@ -1164,7 +990,7 @@ a.room-detail:hover{
 }
 
 .home-gen-info-det .home-gen-btn {
-    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 300px;
     cursor: pointer;
     font-size: 14px;
@@ -1177,8 +1003,12 @@ a.room-detail:hover{
 
 
 @media (max-width:799px) {
+    #home-room h2 {
+        font-size: 2.3rem;
+    }
     #home-room a::after {
-            right: 290px;
+        top: 140px;
+        right: 290px;
     }
 
     #home-room-container {
@@ -1186,18 +1016,21 @@ a.room-detail:hover{
         flex-wrap: wrap;
     }
     #home-room .home-room-sample {
-        margin: 15px;
-        min-width: 250px;
+        margin: 0.9em;
+        min-width: 15em;
+        width: 27%;
+    }
+
+    #home-gen-info h2 {
+        font-size: 2.3rem;
     }
     .home-gen-info-container img {
-        height: 50vh;
+        height: 23em;
         background-size: cover;
     }
     .home-gen-info-det {
-        top: 1150px;
-        right: 90px;
         width: 50%;
-        height: 30vh;
+        height: 18em;
     }
     .home-gen-info-det .home-gen-btn {
         font-size: 14px;
@@ -1206,42 +1039,64 @@ a.room-detail:hover{
         color: #000;
         border: none;
         outline: none;
-        margin-top: 20px;
-        margin-left: 220px;
+        margin: 5px 0 5px 200px;
     }
 }
 
 @media (max-width: 477px) {
+
+    #home-room h2 {
+        margin: 0;
+        padding: 0.6em 0;
+        font-size: 1.5rem;
+    }
+
+    a.room-detail {
+        padding-bottom: 0.7em;
+        padding-right: 3.5em;
+    }
     
     #home-room a::after {
+        top: 115px;
         right: 120px;
     }
-    #home-gen-info {
-        padding-top: 880px;
+    #home-room-container {
+        display: flex;
+        flex: wrap;
+        padding: 0.9em 0;
+    }
+
+    #home-room .home-room-sample {
+        margin: 0.8em;
+        min-width: 100%;
+    }
+    
+    #home-gen-info h2 {
+        margin: 0;
+        padding: 1em 0;
+        font-size: 1.5rem;
     }
     .home-gen-info-det h4 {
         font-size: 20px;
     }
     .home-gen-info-det {
-        top: 1900px;
         right: 0;
-        width: 50%;
-        height: 35vh;
+        bottom: 0;
+        width: 80%;
+        height: 280px;
         font-size: 18px;
     }
     .home-gen-info-container img {
-        height: 50vh;
+        height: 350px;
         background-size: cover;
     }
     .home-gen-info-det .home-gen-btn {
         font-size: 14px;
         font-weight: 600;
-        padding: 10px 40px;
+        padding: 8px 30px;
         color: #000;
         border: none;
         outline: none;
-        margin-top: 20px;
-        margin-left: 28px;
     }
 }
 
@@ -1255,6 +1110,7 @@ a.room-detail:hover{
     }
 }
 /* end of home-room and home-gen */
+
 .sginfo{
     color: #F6D106;
 }
@@ -1276,6 +1132,7 @@ a.room-detail:hover{
 .demo-wrap {
     overflow: hidden;
     position: relative;
+    
   }
   
   .demo-bg {
@@ -1287,5 +1144,110 @@ a.room-detail:hover{
     height: auto;
   }
 
-  /*================ MEDIA QUARIES ===========*/
+
+/*=================== START Navbar & Carousel TDTZ ===================*/
+.bg_blue{
+    background-color: #4A9BE3;
+}
+/* navitem logoimg */
+.logoimg{
+    width: 20px;
+    height: 20px;
+}
+.info{
+    color: gold;
+}
+nav a:hover{
+	
+	color:gold !important;
+}
+.slider{
+    height: 500px;
+}
+.carousel_text{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    z-index: 1;
+    color: white;
+}
+
+.banner-btn{
+	background-color: transparent;
+   
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	transition: color 0.5s;
+    text-align: center;
+    
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4A9BE3;
+    z-index: -1;
+   transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+    display: inline-block;
+	color: goldenrod;
+    font-weight: bold;    
+}
+
+@media only screen and (max-width: 799px) {
+    .carousel_text{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        z-index: 1;
+        color: white;
+        
+    }
+    .banner-btn{
+        margin-top: 30px;
+    }
+    .carousel_para{
+        display: none;
+    }
+}
+/*========= overlay =======*/
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.7);
+    opacity: .5;
+  }
+
+/*=================== END Navbar & Carousel TDTZ ===================*/
+
+
+
+
+
+
+  
+
+
+
+
+
+    
 
