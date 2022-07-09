@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Sawarabi+Mincho&display=swap');
  * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,9 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Sawarabi Mincho', serif;
+    /* font-family: 'Montserrat', sans-serif;/ */
 }
 :root{
     --color-primary: #6c63ff;
@@ -28,7 +33,7 @@
     --transition: all 400ms ease;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     line-height: 1.7;
     color: var(--color-white);
     background-color: var(--main-color);
@@ -198,9 +203,8 @@ img{
     transition: 0.2s;
 
     padding-left: 20%;
+    }
 }
-}
-
 
 
 @media(max-width: 477px){
@@ -283,7 +287,7 @@ a.room-detail:hover{
     color: #fab702;
 }
 
-#home-room a::after {
+#home-room .room-detail::after {
     content: "";
     width: 3rem;
     height: 0.15rem;
@@ -349,6 +353,7 @@ a.room-detail:hover{
 .home-room-info .home-room-info-single {
     display: inline;
     font-size: 15px;
+    padding-left: 20px;
 }
 
 /* end of home-room */
@@ -366,6 +371,183 @@ a.room-detail:hover{
     margin: 0;
     padding: 40px 0;
 }
+
+.home-gen-info-container {
+    position: relative;
+}
+
+.home-gen-info-container img {
+    width: 100%;
+    height: 25em;
+}
+
+.home-gen-info-det h4,
+.home-gen-list {
+    color: #000;
+}
+
+.home-gen-info-container .home-gen-info-det {
+    width: 35%;
+    height: 280px;
+    background-color: #f7c94b;
+    position: absolute;
+    right: 130px;
+    bottom: 15%;
+    z-index: 99;
+    animation: introLoad 2s forwards;
+
+}
+
+.home-gen-info-det h4 {
+    padding: 20px 15px;
+}
+
+.home-gen-list {
+    margin: 3px 0;
+}
+
+
+.home-gen-info-det .home-gen-list li {
+    padding-left: 10px;
+    color: #000;
+    line-height: 30px;
+}
+
+.home-gen-info-det .home-gen-btn {
+    margin-bottom: 30px;
+    margin-left: 300px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width:799px) {
+    #home-room h2 {
+        font-size: 2.3rem;
+    }
+
+    #home-room .room-detail::after {
+        top: 140px;
+        right: 290px;
+    }
+
+    #home-room-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #home-room .home-room-sample {
+        margin: 0.9em;
+        min-width: 260px;
+        width: 27%;
+    }
+
+    #home-gen-info h2 {
+        font-size: 2.3rem;
+    }
+
+    .home-gen-info-container img {
+        height: 23em;
+        background-size: cover;
+    }
+
+    .home-gen-info-container .home-gen-info-det {
+        width: 50%;
+        height: 280px;
+        bottom: 10%;
+        right: 10%;
+    }
+
+    .home-gen-info-det .home-gen-btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 30px;
+        color: #000;
+        border: none;
+        outline: none;
+        margin: 0 10px 0 200px;
+    }
+}
+
+@media (max-width: 477px) {
+
+    #home-room h2 {
+        margin: 0;
+        padding: 0.6em 0;
+        font-size: 1.5rem;
+    }
+
+    a.room-detail {
+        padding-bottom: 0.7em;
+        padding-right: 3.5em;
+    }
+
+    #home-room .room-detail::after {
+        top: 115px;
+        right: 120px;
+    }
+
+    #home-room-container {
+        display: flex;
+        flex: wrap;
+        padding: 0.9em 0;
+    }
+
+    #home-room .home-room-sample {
+        margin: 0.8em;
+        width: 25%;
+    }
+
+    #home-gen-info h2 {
+        margin: 0;
+        padding: 1em 0;
+        font-size: 1.5rem;
+    }
+
+    .home-gen-info-det h4 {
+        font-size: 20px;
+    }
+
+    .home-gen-info-container .home-gen-info-det {
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 280px;
+        font-size: 18px;
+    }
+
+    .home-gen-info-container img {
+        height: 350px;
+        background-size: cover;
+    }
+
+    .home-gen-info-det .home-gen-btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px 20px;
+        color: #000;
+        border: none;
+        outline: none;
+    }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* end of home-room and home-gen */
 
 .btn:hover {
     background: transparent;
@@ -406,7 +588,7 @@ a.room-detail:hover{
 }
 
 #search_jobs{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     border-radius: 0.3rem;
     font-size: 15px;
     height: 2.8rem;
@@ -418,7 +600,7 @@ a.room-detail:hover{
 }
 
 #location{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 15px;
     border-radius: 0.3rem;
     height: 2.8rem;
@@ -430,7 +612,7 @@ a.room-detail:hover{
 
 #jobs_categories{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     color: #554848;
     border-radius: 0.3rem;
     height: 2.8rem;
@@ -449,7 +631,7 @@ a.room-detail:hover{
 
 .search{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     height: 2.8rem;
     /* margin-left: 1rem; */
     /* width: max-content; */
@@ -486,7 +668,7 @@ a.room-detail:hover{
 
 
 #h2{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     color: rgb(247, 201, 75);
     text-align: center;
     margin-top: 2.5rem;
@@ -507,7 +689,7 @@ a.room-detail:hover{
 }
 
 .jobbackground_color{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     text-align: center;
     border-radius: 0.9rem;
     color: #554848;
@@ -527,7 +709,7 @@ a.room-detail:hover{
 
 .browse{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     text-align: center;
     height: 3rem;
     width: max-content;
@@ -644,7 +826,7 @@ a.room-detail:hover{
     }
 
     #location{
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 15px;
         border-radius: 0.3rem;
         height: 2.8rem;
@@ -657,7 +839,7 @@ a.room-detail:hover{
 
     #jobs_categories{
         font-size: 15px;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         color: #554848;
         border-radius: 0.5rem;
         height: 2.8rem;
@@ -945,171 +1127,7 @@ a.room-detail:hover{
 
 /*========= ==========  ======= End Of Globel News ======  =========== ==================*/
 
-.home-gen-info-container {
-    position: relative;
-}
-.home-gen-info-container img {
-    width: 100%;
-    height: 25em;
-}
 
-.home-gen-info-det h4, .home-gen-list {
-    color: #000;
-}
-
-.home-gen-info-container .home-gen-info-det {
-    width: 35%;
-    height: 280px;
-    background-color: #f7c94b;
-    position: absolute;
-    bottom: 5%;
-    
-}
-.home-gen-info-det h4 {
-    padding: 20px 15px;
-}
-
-.home-gen-list {
-    margin: 3px 0;
-}
-
-
-.home-gen-info-det .home-gen-list li {
-    padding-left: 10px;
-    color: #000;
-    line-height: 30px;
-}
-.home-gen-info-det {
-    position: absolute;
-    /* top: 820px; */
-    right: 130px;
-    background-position-x: 20%;
-    background-position-y: 20%;
-    z-index: 99;
-    animation: introLoad 2s forwards;
-}
-
-.home-gen-info-det .home-gen-btn {
-    margin-bottom: 30px;
-    margin-left: 300px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 30px;
-    color: #000;
-    border: none;
-    outline: none;
-}
-
-
-@media (max-width:799px) {
-    #home-room h2 {
-        font-size: 2.3rem;
-    }
-    #home-room a::after {
-        top: 140px;
-        right: 290px;
-    }
-
-    #home-room-container {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    #home-room .home-room-sample {
-        margin: 0.9em;
-        min-width: 15em;
-        width: 27%;
-    }
-
-    #home-gen-info h2 {
-        font-size: 2.3rem;
-    }
-    .home-gen-info-container img {
-        height: 23em;
-        background-size: cover;
-    }
-    .home-gen-info-det {
-        width: 50%;
-        height: 18em;
-    }
-    .home-gen-info-det .home-gen-btn {
-        font-size: 14px;
-        font-weight: 600;
-        padding: 10px 40px;
-        color: #000;
-        border: none;
-        outline: none;
-        margin: 5px 0 5px 200px;
-    }
-}
-
-@media (max-width: 477px) {
-
-    #home-room h2 {
-        margin: 0;
-        padding: 0.6em 0;
-        font-size: 1.5rem;
-    }
-
-    a.room-detail {
-        padding-bottom: 0.7em;
-        padding-right: 3.5em;
-    }
-    
-    #home-room a::after {
-        top: 115px;
-        right: 120px;
-    }
-    #home-room-container {
-        display: flex;
-        flex: wrap;
-        padding: 0.9em 0;
-    }
-
-    #home-room .home-room-sample {
-        margin: 0.8em;
-        min-width: 100%;
-    }
-    
-    #home-gen-info h2 {
-        margin: 0;
-        padding: 1em 0;
-        font-size: 1.5rem;
-    }
-    .home-gen-info-det h4 {
-        font-size: 20px;
-    }
-    .home-gen-info-det {
-        right: 0;
-        bottom: 0;
-        width: 80%;
-        height: 280px;
-        font-size: 18px;
-    }
-    .home-gen-info-container img {
-        height: 350px;
-        background-size: cover;
-    }
-    .home-gen-info-det .home-gen-btn {
-        font-size: 14px;
-        font-weight: 600;
-        padding: 8px 30px;
-        color: #000;
-        border: none;
-        outline: none;
-    }
-}
-
-@keyframes introLoad {
-    from {
-        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);;
-    }
-
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-/* end of home-room and home-gen */
 
 .sginfo{
     color: #F6D106;
