@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 
+/* start middle_general */
+
 #general_info {
     width: 100%;
     display: flex;
@@ -27,20 +29,20 @@
     padding: 0 20px;    
 }
 .second_container {
-    margin: 20px;
-    padding: 0 20px;
+    margin: 30px;
+    padding: 0 10px;
 }
 .single {
     position: relative;
 }
 .single h3::after {
     content: "";
-    width: 7.3em;
-    height: 0.15em;
+    width: 30%;
+    height: 3px;
     background-color: #fab702;
     position: absolute;
-    top: 22px;
-    left: 160px;
+    margin-top: 12px;
+    margin-left: 30px;
 }
 .group {
     position: relative;
@@ -48,12 +50,12 @@
 
 .group h3::after {
     content: "";
-    width: 7.3em;
-    height: 0.15em;
+    width: 30%;
+    height: 3px;
     background-color: #fab702;
     position: absolute;
-    top: 22px;
-    left: 160px;
+    margin-top: 12px;
+    margin-left: 30px;
 }
 
 .first_container .header_3{
@@ -121,6 +123,7 @@
 }
 .group .circle p {
     padding: 8px 0;
+    margin: auto 0;
 }
 .group .circle p span {
     font-weight: bold;
@@ -165,6 +168,28 @@
         width: 50%;
    }
 }
+
+@media (max-width: 477px) {
+    #general_info {
+        justify-content: center;
+    }
+    #first_general {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #first_general .first_container {
+        width: 100%;
+    }
+    #second_general .second_container .circle_gp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .circle_gp .circle {
+        width: 100%;
+    }
+}
+
+/* end of middle_general */
 
 /* =================================== For Health & Education Article  ============================================== */
 #health_education_container{
