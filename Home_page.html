@@ -4,32 +4,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jobs</title>
+    <title>SGInfo</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- start nav -->
     <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
         <div class="container-fluid mx-lg-5">
-          <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
+          <a class="navbar-brand" href="#">SG<span class="info">INFO</span></a>
           <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item ms-lg-4">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="Home_page.html">Home</a>
               </li>
               <li class="nav-item  ms-lg-4">
-                <a class="nav-link active" href="#">Rooms</a>
+                <a class="nav-link active" href="room_list.html">Rooms</a>
               </li>
               <li class="nav-item  ms-lg-4">
-                <a class="nav-link active" href="#">General</a>
+                <a class="nav-link active" href="General_info.html">General</a>
               </li>
               <li class="nav-item  ms-lg-4">
                 <a class="nav-link active" href="Job.html">Jobs</a>
@@ -38,10 +41,10 @@
                 <a class="nav-link active" href="Contact.html">Contact Us</a>
               </li>
               <li class="nav-item  ms-lg-4">
-                <a class="nav-link active" href=""><i class="fa-regular fa-user"></i></a>
+                <a class="nav-link active" href="Login.html"><i class="fa-regular fa-user"></i></a>
               </li>
               <li class="nav-item  ms-lg-4">
-                <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+                <a class="nav-link active" href="#"><img src="images/myanmar.png" alt="" class="logoimg"></a>
               </li>
             </ul>
           </div>
@@ -88,7 +91,7 @@
            <h1>Let's Go SINGAPORE</h1>
            <p class="carousel_para">Lorem ipsum dolor sit amet, consectetur adipisicing.<br> Consequatur vitae pariatur, quisquam natus praesentium aut et inventore? <br>Temporibus voluptates repudiandae consequuntur odit repellat exercitationem<br> fugit minus pariatur.</p>
            <div class="banner-btn">
-               <a href="#"><span></span>Rooms</a>
+               <a href="room_list.html"><span></span>Rooms</a>
                <a href="Job.html"><span></span>Jobs</a>
            </div>
        </div>    
@@ -493,148 +496,48 @@
         <button class="normal">Subscribe</button>
       </div>
     </section>
-
-    <footer class="section-footer">
-      <div class="col">
-
-        <h4>SGINFO</h4>
-        <p>Lorem ipsum dolor<br> sit amet consectetur adipisicing<br> elit. Voluptatibus, dignissimos?</p>
-      </div>
-
-      <div class="col">
-        <h4>INFORMATION</h4>
-        <a href="#">About us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">F.A.Q.</a>
-      </div>
-
-      <div class="col">
-        <h4>CATEGORIES</h4>
-        <a href="#">Room</a>
-        <a href="#">Job</a>
-        <a href="#">General</a>
-      </div>
-
-      <div class="col">
-        <h4>CONTACT</h4>
-        <p>90 Madison Ave,First Floor New York,NY,10016</p>
-        <p>Telephone: 200 256 1855</p>
-        <p>Email: mail@yourmail.com</p>
-
-        <div class="icon">
-          <i class="uil uil-facebook-f"></i>
-          <i class="uil uil-twitter"></i>
-          <i class="uil uil-google"></i>
-          <i class="uil uil-instagram-alt"></i>
-          <i class="uil uil-youtube"></i>
-        </div>
-
-      </div>
-
-      <div class="copyright">
-        <p>InMotionLab@2014 | All Rights Reserved</p>
-      </div>
-
-
-
-      <div class="col">
-        <h4>CATEGORIES</h4>
-        <a href="#">Room</a>
-        <a href="#">Job</a>
-        <a href="#">General</a>
-      </div>
-
-
-      <section class="btn-section">
-        <h3 class="job">Latest JOBs</h3>
-        <div class="job-btn">
-          <button class="jobbutton"><a href="#">Mobile Developer</a></button>
-          <button class="jobbutton"><a href="#">Andriod Developer</a></button>
-          <button class="jobbutton"><a href="#">iOS Developer</a></button>
-          <button class="jobbutton"><a href="#">Java Developer</a></button>
-        </div>
-
-
-        <div class="job-btn1">
-          <button class="jobbutton"><a href="#">React Developer</a></button>
-          <button class="jobbutton"><a href="#">Odoo Developer</a></button>
-          <button class="jobbutton"><a href="#">Nodejs Developer</a></button>
-        </div>
-
-
-        <div class="job-btn2">
-          <button class="jobbutton"><a href="#">Web Developer</a></button>
-          <button class="jobbutton"><a href="#">Python Developer</a></button>
-
-        </div>
-      </section>
-
-
-      <section class="newsletter">
-        <div class=" newstext">
-
-          <div>
-            <h4>NEWSLETTER SIGN UP</h4>
-            <P>Lorem ipsum, or lipsum as it is sometimes known</P>
-          </div>
-        </div>
-        <div class="form">
-          <input type="text" placeholder="Your email adderss.....">
-          <button class="normal">Subscribe</button>
-        </div>
-      </section>
-
-      <footer class="section-footer">
+  <footer class="section-footer">
         <div class="col">
-
-          <h4>SGINFO</h4>
-          <p>Lorem ipsum dolor<br> sit amet consectetur adipisicing<br> elit. Voluptatibus, dignissimos?</p>
+          <h4>SG<span class="info">INFO</span></h4>
+          <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. <br> Voluptatibus, dignissimos.
+            <br> Lorem ipsum dolor sit amet <br> consectetur adipisicing<br> elit.
+          </p>
         </div>
 
         <div class="col">
           <h4>INFORMATION</h4>
-          <a href="#">About us</a>
-          <a href="#">Contact Us</a>
+          <!-- <a href="#">About us</a> -->
+          <a href="Contact.html">Contact Us</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Privacy Policy</a>
           <a href="#">F.A.Q.</a>
         </div>
 
         <div class="col">
-          <h4>CATEGORIES</h4>
-          <a href="#">Room</a>
-          <a href="#">Job</a>
+          <h4>QUICK LINKS</h4>
+          <a href="#">Rooms</a>
+          <a href="Job.html">Jobs</a>
           <a href="#">General</a>
         </div>
 
         <div class="col">
           <h4>CONTACT</h4>
-          <p>90 Madison Ave,First Floor New York,NY,10016</p>
-          <p>Telephone: 200 256 1855</p>
-          <p>Email: mail@yourmail.com</p>
-
-          <div class="icon">
-            <i class="uil uil-facebook-f"></i>
-            <i class="uil uil-twitter"></i>
-            <i class="uil uil-google"></i>
-            <i class="uil uil-instagram-alt"></i>
-            <i class="uil uil-youtube"></i>
-          </div>
-
+          <p>90 Madison Ave,First Floor New York,NY</p>
+          <a href="tel:+95 1 9669724">Telephone: 200 256 1855</a>
+          <a href="mailto:sginfo@myanmar.com">Email: mail@yourmail.com</a>
+            <div class="social-links">
+              <i class="uil uil-facebook-f uil_icon"></i>
+              <i class="uil uil-instagram-alt uil_icon"></i>
+              <i class="uil uil-twitter uil_icon"></i>
+              <i class="uil uil-youtube uil_icon"></i>
+            </div>
         </div>
 
         <div class="copyright">
-          <p>InMotionLab@2014 | All Rights Reserved</p>
+          <p>ITVisionHub SGcamp4@2022 | All Rights Reserved</p>
         </div>
-
-
-      </footer>
-
-      <!-- end of footer -->
-      <script src="./main.js"></script>
-
-  </body>
-
+  </footer>
+<!-- end of footer -->
+<script src="./main.js"></script>
+</body>
 </html>
