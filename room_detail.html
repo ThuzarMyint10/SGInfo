@@ -14,14 +14,11 @@
     <!--Fonts Google Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;1,100;1,600&display=swap"
-        rel="stylesheet">
-    <!-- Bootsrap CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;1,100;1,600&display=swap" rel="stylesheet">
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JS -->
     <script src="jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
@@ -31,138 +28,581 @@
 </head>
 
 <body>
-    <section id="header">
-        <!-- <div class="container"> -->
-        <a href="#">
-            <h3>SG<span class="sginfo">info</span></h3>
-        </a>
-        <ul class="navbar">
-            <li><a href="Home_page.html">Home</a></li>
-            <li><a class="active" href="">Rooms</a></li>
-            <li><a href="">General</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="Contact.html">Meet Us</a></li>
-            <li id="lg-bag"><a href=""><i class="uil uil-user"></i></a></li>
-            <li><a href="Register.html"><img src="images/myanmar.png" alt="" class="logoimg"></a></li>
-            <!-- <a href=" https://iconscout.com/icon/menu-1768002" ></a> -->
-        </ul>
-        <!-- <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-           -->
-        <!-- </div> -->
-    </section>
 
+    <!-- =============================== Nav Bar ===================================== -->
+    <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
+        <div class="container-fluid mx-lg-5">
+          <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
+          <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-lg-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="room_list.html">Rooms</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="#">General</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="Job.html">Jobs</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <div class="dropdown">
+                    <button class="dropbtn">Upload</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="document.getElementById('job').style.display='block'">Job</a>
+                        <a href="#" onclick="document.getElementById('article').style.display='block'">Article</a>
+                        <a href="#" onclick="document.getElementById('room').style.display='block'">Room</a>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <div class="dropdown">
+                    <button class="dropbtn "><i class="fa-regular fa-user"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="document.getElementById('register').style.display='block'">Register</a>
+                        <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+                        <a href="">Logout</a>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- =============================== Modal Box ===================================== -->
+    <div class="w3-container"> 
+        <div id="job" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('job').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                </div>
+      
+                <div class="main">
+                    <form class="w3-container first" action="">
+                        <h1 class="modal-h1">JOB UPLOAD FORM</h1>
+                        <div class="userInput">
+                            <div class="modal-div">
+                                <label for="" class="modal-label">JOB TITLE</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">COMPANY NAME</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">COMPANY URL</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">JOB CATEGORY</label> <br>
+                                <select name="" id="" class="modal-select">
+                                    <option value="" selected disabled class="modal-option">Choose category</option>
+                                    <option value="" class="modal-option">Software</option>
+                                    <option value="" class="modal-option">Networking</option>
+                                    <option value="" class="modal-option">Database</option>
+                                    <option value="" class="modal-option">Website</option>
+                                    <option value="" class="modal-option">Cloud Computing</option>
+                                </select>
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">TYPE OF ROLE</label> <br>
+                                <select name="" id="" class="modal-select">
+                                    <option value="" selected disabled class="modal-option">Choose role</option>
+                                    <option value="" class="modal-option">Frontend Developer</option>
+                                    <option value="" class="modal-option">Backend Developer</option>
+                                    <option value="" class="modal-option">Software Engineer</option>
+                                    <option value="" class="modal-option">Project Manager</option>
+                                    <option value="" class="modal-option">Data Analyst</option>
+                                </select>
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">SALARY</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">JOB LOCATION</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">DESCRIPTION</label> <br>
+                                <textarea class="modal-input" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="uploadBtn">UPLOAD</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container"> 
+        <div id="article" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('article').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                </div>
+      
+                <div class="main">
+                    <form class="w3-container first" action="">
+                        <h1 class="modal-h1">ARTICLE UPLOAD FORM</h1>
+                        <div class="userInput">
+                            <div class="modal-div">
+                                <label for="" class="modal-label">JOURNALIST NAME</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">NEWS TITLE</label> <br>
+                                <input class="modal-input" type="text">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">NEWS TYPE</label> <br>
+                                <select name="" id="" class="modal-select">
+                                    <option value="" selected disabled class="modal-option">Choose news type</option>
+                                    <option value="" class="modal-option">Global News</option>
+                                    <option value="" class="modal-option">Health</option>
+                                    <option value="" class="modal-option">Education</option>
+                                    <option value="" class="modal-option">Most Popular</option>
+                                    <option value="" class="modal-option">Travel Guide</option>
+                                </select>
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">PLEASE UPLOAD PHOTOS</label> <br>
+                                <input class="modal-input" type="file" multiple>
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">DESCRIPTION</label> <br>
+                                <textarea class="modal-input" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="uploadBtn">UPLOAD</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container"> 
+        <div id="room" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width:65%">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('room').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                </div>
+      
+                <div class="main-room">
+                    <form class="w3-container first-room" action="">
+                        <h1 class="modal-h1-room">ROOM UPLOAD FORM</h1>
+                        <div class="userInput-room">
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">PROPERTY TYPE</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">AVAILABILITY</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">DEVELOPER</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">FLOOR LEVEL</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">FLOOR SIZE (sqft)</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">PSF (psf)</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room">
+                                <label for="" class="modal-label-room">NEAREST MRT/LRT</label> <br>
+                                <input class="modal-input-room" type="text">
+                            </div>
+                            <div class="modal-div-room modal-div-room-textarea">
+                                <label for="" class="modal-label-room">ADDRESS</label> <br>
+                                <textarea class="modal-input-room-textarea" name="" id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room">RENT OR SALE</label> <br>
+                                <select name="" id="" class="modal-select-room">
+                                    <option value="" selected disabled class="modal-option-room">Choose option</option>
+                                    <option value="" class="modal-option-room">for rent</option>
+                                    <option value="" class="modal-option-room">for sale</option>
+                                </select>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room modal-div-room-100">PRICE RATE(per month)</label> <br>
+                                <input class="modal-input-room modal-input-room-new" style="width: 48%;" type="text">
+                                <select name="" id="" class="modal-select-room" style="width: 48%;">
+                                    <option value="" selected disabled class="modal-option-room">Currency</option>
+                                    <option value="" class="modal-option-room">USD</option>
+                                    <option value="" class="modal-option-room">SGD</option>
+                                    <option value="" class="modal-option-room">YEN</option>
+                                </select>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room">PLEASE UPLOAD PHOTOS</label> <br>
+                                <input class="modal-input-room-image" type="file" multiple>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room">NUMBER OF ROOMS</label> <br>
+                                <select name="" id="" class="modal-select-room" style="width: 48%;">
+                                    <option value="" selected disabled class="modal-option-room">Bed room</option>
+                                    <option value="" class="modal-option-room">1</option>
+                                    <option value="" class="modal-option-room">2</option>
+                                    <option value="" class="modal-option-room">3</option>
+                                    <option value="" class="modal-option-room">4</option>
+                                    <option value="" class="modal-option-room">5</option>
+                                </select>
+                                <select name="" id="" class="modal-select-room" style="width: 48%;">
+                                    <option value="" selected disabled class="modal-option-room">Bath room</option>
+                                    <option value="" class="modal-option-room">1</option>
+                                    <option value="" class="modal-option-room">2</option>
+                                    <option value="" class="modal-option-room">3</option>
+                                    <option value="" class="modal-option-room">4</option>
+                                    <option value="" class="modal-option-room">5</option>
+                                </select>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room">SELECT KEY FEATURES</label> <br>
+                                <select name="" id="" class="modal-select-room" style="width: 100%;padding-left:10px;" multiple>
+                                    <option value="" class="modal-option-room-special">Air-Conditioning</option>
+                                    <option value="" class="modal-option-room">Cooker Hob/Hood</option>
+                                    <option value="" class="modal-option-room">Fridge</option>
+                                    <option value="" class="modal-option-room">High Floor</option>
+                                    <option value="" class="modal-option-room">Intercom</option>
+                                    <option value="" class="modal-option-room">Renovated</option>
+                                    <option value="" class="modal-option-room">Dryer</option>
+                                    <option value="" class="modal-option-room">Water Heater</option>
+                                    <option value="" class="modal-option-room">Balcony</option>
+                                    <option value="" class="modal-option-room">Corner Unit</option>
+                                    <option value="" class="modal-option-room">Park / Greenery View</option>
+                                    <option value="" class="modal-option-room">Internet Connection</option>
+                                    <option value="" class="modal-option-room">Oven / Microwave</option>
+                                    <option value="" class="modal-option-room">Washing Machine</option>
+                                </select>
+                            </div>
+                            <div class="modal-div-room modal-div-room-100">
+                                <label for="" class="modal-label-room">SELECT FACILITIES</label> <br>
+                                <select name="" id="" class="modal-select-room" style="width: 100%;padding-left:10px;" multiple>
+                                    <option value="" class="modal-option-room-special">Barbeque Area</option>
+                                    <option value="" class="modal-option-room">Covered car park</option>
+                                    <option value="" class="modal-option-room">Function room</option>
+                                    <option value="" class="modal-option-room">Mini-Mart</option>
+                                    <option value="" class="modal-option-room">24 hours security</option>
+                                    <option value="" class="modal-option-room">Swimming pool</option>
+                                    <option value="" class="modal-option-room">Billiards room</option>
+                                    <option value="" class="modal-option-room">Clubhouse</option>
+                                    <option value="" class="modal-option-room">Gymnasium room</option>
+                                    <option value="" class="modal-option-room">Sauna</option>
+                                    <option value="" class="modal-option-room">Squash court</option>
+                                    <option value="" class="modal-option-room">Tennis courts</option>
+                                </select>
+                            </div>
+                           
+                            <div class="modal-div-room modal-div-room-textarea">
+                                <label for="" class="modal-label-room">DESCRIPTION</label> <br>
+                                <textarea class="modal-input-room-textarea" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="uploadBtn-room">UPLOAD</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container"> 
+        <div id="login" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                </div>
+      
+                <div class="main">
+                    <form class="w3-container first" action="">
+                        <h1 class="modal-h1">Welcome to SG Info</h1>
+                        <div class="userInput">
+                            <div class="modal-div">
+                                <label for="" class="modal-label">EMAIL</label> <br>
+                                <input class="modal-input" type="text" placeholder="Enter email">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">PASSWORD</label> <br>
+                                <input class="modal-input" type="password" placeholder="Enter password">
+                            </div>
+                            <p><a href="">Forgot Password?</a></p>
+                            <button class="uploadBtn">LOGIN</button>
+                        </div>
+
+                        <div class="otherLogin">
+                            <p class="other-p">(OR)</p>
+                            <div class="google">
+                                <img class="other-img" src="images/login_register/google.svg" alt="">
+                                <h2 class="other-h2"><a class="other-a" href="">Continue with Google</a></h2>
+                            </div>
+                            <div class="facebook">
+                                <img class="other-img" src="images/login_register/facebook.svg" alt="">
+                                <h2 class="other-h2"><a href="" class="other-a">Continue with Facebook</a> </h2>
+                            </div>
+                            <div class="apple">
+                                <img class="other-img" src="images/login_register/apple.svg" alt="">
+                                <h2 class="other-h2"><a class="other-a" href="">Continue with Apple</a></h2>
+                            </div>
+                            <div class="other-login">New to SG Info? <a href="" class="other-login-a">Sign up</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container"> 
+        <div id="register" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                </div>
+      
+                <div class="main">
+                    <form class="w3-container first" action="">
+                        <h1 class="modal-h1">Sign up</h1>
+                        <h4 class="modal-h4">Search everything on your own time from SG Info</h4>
+                        <div class="userInput">
+                            <div class="modal-div">
+                                <label for="" class="modal-label">FULL NAME</label> <br>
+                                <input class="modal-input" type="text" placeholder="Enter fullname">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">EMAIL</label> <br>
+                                <input class="modal-input" type="text" placeholder="Enter email">
+                            </div>
+                            <div class="modal-div">
+                                <label for="" class="modal-label">PASSWORD</label> <br>
+                                <input class="modal-input" type="password" placeholder="Enter password">
+                            </div>
+                            <p class="modal-p">Between 8 and 72 characters</p>
+                            <button class="uploadBtn">REGISTER</button>
+                        </div>
+
+                        <div class="otherLogin">
+                            <p class="other-p">(OR)</p>
+                            <div class="google">
+                                <img class="other-img" src="images/login_register/google.svg" alt="">
+                                <h2 class="other-h2"><a class="other-a" href="">Continue with Google</a></h2>
+                            </div>
+                            <div class="facebook">
+                                <img class="other-img" src="images/login_register/facebook.svg" alt="">
+                                <h2 class="other-h2"><a href="" class="other-a">Continue with Facebook</a> </h2>
+                            </div>
+                            <div class="other-login">Already a member? <a href="" class="other-login-a">Log in</a></div>
+                        </div>
+
+                        <div class="term&condition">
+                            <div class="line"></div>
+                            <div class="term">
+                                <p class="term-p"><i class="fa-solid fa-square-check"></i>  I accept Coursera's <a href="" class="term-a">Terms of Use</a> and <a href="" class="term-a">Privacy Notice</a>. Having trouble logging in? <a href="">Learner help center</a></p>
+                                <p class="term-p">This site is protected by reCAPTCHA Enterprise and the Google <a href="" class="term-a">Privacy Policy</a> and <a href="" class="term-a">Terms of Service apply</a>.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                  
+
+    <!-- =============================== Main Content ===================================== -->
     <section id="main">
         <section id="left">
             <div class="view">
                 <div class="title">
                     <div class="title-left">
-                        <h1>DELUXE SEA VIEW</h1>
+                        <h1 class="title-h1">EMERALD GARDEN</h1>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                         <small>8 views</small>
-                        <small>Space: 306 sqm | </small>
-                        <small>Max. 8 guests</small>
+                        <small>Space: 306 sqft    </small>
+                        <!-- <small>Max. 8 guests</small> -->
                     </div>
                     <div class="title-right">
                         <p>from</p>
-                        <h3>$149.00 / night</h3>
+                        <h3 class="title-right-h3">$149.00 USD / month</h3>
                     </div>
                 </div>
                 <div class="line"></div>
                 <div class="image">
                     <div class="img-large">
-                        <img src="images/room_detail/1-detail.jpg" alt="">
+                        <img class="img-large-each" src="images/room_detail/1-detail.jpg" alt="">
                     </div>
                     <div class="img-small">
-                        <img src="images/room_detail/2-detail.jpg" style="width: 24%;" alt="">
-                        <img src="images/room_detail/3-detail.jpg" style="width: 24%;" alt="">
-                        <img src="images/room_detail/4-detail.jpg" style="width: 24%;" alt="">
-                        <img src="images/room_detail/5-detail.jpg" style="width: 24%;" alt="">
+                        <img class="img-small-each" src="images/room_detail/2-detail.jpg" style="width: 24%;" alt="">
+                        <img class="img-small-each" src="images/room_detail/3-detail.jpg" style="width: 24%;" alt="">
+                        <img class="img-small-each" src="images/room_detail/4-detail.jpg" style="width: 24%;" alt="">
+                        <img class="img-small-each" src="images/room_detail/5-detail.jpg" style="width: 24%;" alt="">
                     </div>
                 </div>
+                <!-- room detail -->
+                <div class="room-detail">
+                    <h1 class="overview-h1">ROOM DETAIL</h1>
+                    <div class="room-detail-list">
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Property Type</label>
+                            <input type="text" class="room-detail-input" value="Condiminium For Rent">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Floor size</label>
+                            <input type="text" class="room-detail-input" value="306 sqft">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Developer</label>
+                            <input type="text" class="room-detail-input" value="Clementi Development Pte Ltd">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Bed and Bath rooms</label>
+                            <input type="text" class="room-detail-input" value="5 bed & 3 bath rooms">
+                            
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Floor Level</label>
+                            <input type="text" class="room-detail-input" value="Ground Floor">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">PSF</label>
+                            <input type="text" class="room-detail-input" value="S$ 5.16 psf">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Availability</label>
+                            <input type="text" class="room-detail-input" value="Ready to move">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Rent or Sale</label>
+                            <input type="text" class="room-detail-input" value="For rent">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Address</label>
+                            <input type="text" class="room-detail-input" value="55 Lengkong Empat 417642 Eunos / Geylang / Paya Lebar (D14)">
+                        </div>
+                        <div class="room-detail-each">
+                            <label class="room-detail-label" for="">Nearest MRT/LRT</label>
+                            <input type="text" class="room-detail-input" value="11 mins (860 m) to EW6 Kembangan MRT">
+                        </div>
+                    </div>
+                </div>
+                <!-- room overview -->
                 <div class="overview">
-                    <h1>ROOM OVERVIEW</h1>
-                    <p>
-                        All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature.
-                        We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you
-                        after a long day.
+                    <h1 class="overview-h1">ROOM OVERVIEW</h1>
+                    <p class="overview-p">
+                        All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day.
                     </p>
-                    <p>
-                        Fast WIFI connection, satelite TV and international standard electric socket are standard
-                        throughout Hotel. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="overview-p">
+                        Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                    <p class="overview-p">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
                     </p>
                 </div>
                 <div class="line"></div>
-
+                <!-- amentities -->
                 <div class="amenities">
                     <h1>FACILITIES & AMENITIES</h1>
                     <div class="amenities-group">
                         <div class="amentities-item">
-                            <img src="images/room_detail/air-conditioner.svg" style="width: 15%;" alt="">
-                            <p>Air conditione</p>
+                            <h4 class="amentities-h4">Key Features</h4>
+                            <ul class="amentities-ul">
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Bed</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Dryer</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Internet connection</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Oven / Microwave</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Dining Room Furniture</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Washing Machin</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Kitchen Utensils</li>
+                                <li class="amentities-li"><i class="fa-solid fa-star"></i>Fridge</li>
+                            </ul>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/hair-dryer.svg" style="width: 15%;" alt="">
+                            <h4 class="amentities-h4">Facilities</h4>
+                            <ul class="amentities-ul">
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Barbeque Area</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Gymnasium room</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Squash court</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Tennis courts</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Covered Car Park</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Fitness corner</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Playground</li>
+                                <li class="amentities-li"><i class="fa-solid fa-circle-check"></i>Swimming Pool</li>
+                            </ul>
+                        </div>
+<!-- 
+                        <div class="amentities-item">
+                            <img class="amentities-img" src="images/room_detail/hair-dryer.svg" style="width: 15%;" alt="">
                             <p>Hair Dryer</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/savings.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/savings.svg" style="width: 15%;" alt="">
                             <p>Saving Safe</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/bathtub.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/bathtub.svg" style="width: 15%;" alt="">
                             <p>Bathtub</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/wifi.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/wifi.svg" style="width: 15%;" alt="">
                             <p>High speed Wifi</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/tv.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/tv.svg" style="width: 15%;" alt="">
                             <p>Cable TV</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/telephone.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/telephone.svg" style="width: 15%;" alt="">
                             <p>Cable TV</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/laundry.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/laundry.svg" style="width: 15%;" alt="">
                             <p>Laundry</p>
                         </div>
                         <div class="amentities-item">
-                            <img src="images/room_detail/towel.svg" style="width: 15%;" alt="">
+                            <img class="amentities-img" src="images/room_detail/towel.svg" style="width: 15%;" alt="">
                             <p>Towels</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="room-rule">
+                <!-- room rule -->
+                <!-- <div class="room-rule">
                     <h1>ROOM RULES</h1>
                     <div class="part1">
                         <div class="part1-left">
-                            <h2>Check-in</h2>
+                            <h2 class="part1-left-h2">Check-in</h2>
                             <ol>
-                                <li>Check-in from 9:00 AM - anytime</li>
-                                <li>Early check-in subject to availability</li>
-                                <li>Minimum check-in age - 18</li>
+                                <li class="part1-left-li">Check-in from 9:00 AM - anytime</li>
+                                <li  class="part1-left-li">Early check-in subject to availability</li>
+                                <li  class="part1-left-li">Minimum check-in age - 18</li>
                             </ol>
                         </div>
                         <div class="part1-right">
-                            <h2>Check-out</h2>
+                            <h2 class="part1-right-h2">Check-out</h2>
                             <ol>
-                                <li> Check-out before noon</li>
-                                <li> Express check-out </li>
+                                <li  class="part1-right-li"> Check-out before noon</li>
+                                <li  class="part1-right-li">  Express check-out </li>
                             </ol>
                         </div>
                     </div>
@@ -188,35 +628,35 @@
                             40.0 per day</p>
                     </div>
 
-                </div>
+                </div> -->
                 <div class="line"></div>
                 <!-- other room -->
                 <div class="other-room-main">
-                    <h1 style="margin-bottom: 20px;">OTHER ROOM</h1>
+                    <h1 style="margin-bottom: 20px;">SIMILAR ROOM</h1>
                     <div class="other-room">
                         <div class="other-room-left">
-                            <img src="images/room_detail/other-room-left.jpg" style="width: 90%;" alt="">
-                            <h2>SUPERIOR ROOM</h2>
-                            <small>Space: 135 sqm | </small>
-                            <small>Max. 4 guests</small>
+                            <a href=""><img class="other-room-left-img" src="images/room_detail/other-room-left.jpg" style="width: 90%;" alt=""></a>
+                            <h2 class="other-room-h2">FRANKEL ESTATE</h2>
+                            <small class="other-room-small">Space: 135 sqft  |  </small>
+                            <small class="other-room-small">$13,800 USD /month</small>
                         </div>
                         <div class="other-room-right">
-                            <img src="images/room_detail/other-room-right.jpg" style="width: 90%;" alt="">
-                            <h2>JUNIOR SUIT</h2>
-                            <small>Space: 306 sqm | </small>
-                            <small>Max. 8 guests</small>
+                            <a href=""><img class="other-room-right-img" src="images/room_detail/other-room-right.jpg" style="width: 90%;" alt=""></a>
+                            <h2 class="other-room-h2">SPRING GROVE</h2>
+                            <small class="other-room-small">Space: 306 sqft  |  </small>
+                            <small class="other-room-small">$13,800 USD/month</small>
                         </div>
                     </div>
                 </div>
                 <!-- review -->
                 <div class="review-main">
                     <div class="review">
-                        <h1>REVIEWS</h1>
+                        <h1 class="review-h1">REVIEWS</h1>
                         <div class="line"></div>
                         <div class="review-detail">
-                            <img src="images/room_detail/user.png" alt="">
-                            <div>
-                                <h3>Elicia</h3>
+                            <img class="review-detail-img" src="images/room_detail/user.png"  alt="">
+                            <div class="review-detail-div">
+                                <h3 class="review-h3">Elicia</h3>
                                 <small>April 29,2022</small>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -224,14 +664,14 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half"></i>
                                 <small>8 views</small>
-                                <p>This is exactly what i was looking for, thank you so much for these tutorials</p>
+                                <p class="review-detail-p">This is exactly what i was looking for, thank you so much for these tutorials</p>
                             </div>
                         </div>
                         <div class="line"></div>
                         <div class="review-detail">
-                            <img src="images/room_detail/user.png" alt="">
-                            <div>
-                                <h3>Saimon</h3>
+                            <img src="images/room_detail/user.png" class="review-detail-img" alt="">
+                            <div class="review-detail-div">
+                                <h3 class="review-h3">Saimon</h3>
                                 <small>April 29,2022</small>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -239,14 +679,14 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half"></i>
                                 <small>8 views</small>
-                                <p>It would be great to try this theme for my businesses</p>
+                                <p class="review-detail-p">It would be great to try this theme for my businesses</p>
                             </div>
                         </div>
                         <div class="line"></div>
                         <div class="review-detail">
-                            <img src="images/room_detail/user.png" alt="">
-                            <div>
-                                <h3>David</h3>
+                            <img src="images/room_detail/user.png" class="review-detail-img" alt="">
+                            <div class="review-detail-div">
+                                <h3 class="review-h3">David</h3>
                                 <small>April 29,2022</small>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -254,75 +694,83 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half"></i>
                                 <small>8 views</small>
-                                <p>It would be great to try this theme for my businesses</p>
+                                <p class="review-detail-p">It would be great to try this theme for my businesses</p>
                             </div>
                         </div>
-                        <button class="comment-btn">Older Comments</button>
+                        <button class="older-comment-btn">Older Comments</button>
+
+                        <!-- reply -->
                         <h1 style="font-size: 25px; font-weight:bolder;">LEAVE A REPLY</h1>
                         <div class="reply">
                             <p>Your email address will not be published. Required fields are marked *</p>
-                            <form action="" method="POST">
+                            <form action="" >
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name" placeholder="">
+                                <input class="reply-input" type="text" id="name" placeholder="">
                                 <label for="email">Email</label>
-                                <input type="text" id="email" placeholder=""> <br><br>
-                                <textarea name="" id="" cols="62" rows="7" placeholder="Comment here ..."></textarea>
+                                <input class="reply-input" type="text" id="email" placeholder=""> <br><br>
+                                <textarea name="" id="" cols="62" rows="7" class="reply-textarea" placeholder="Comment here ..."></textarea>
+                                <p><input type="checkbox" name="" class="reply-input-check"> Save my name, email, and website in this browser for the next time I comment.</p>
+                                <button class="post-btn">Post Comment</button>
                             </form>
-                            <div class="title-left">
-                                <p>Please Rate this</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-
-                            <p><input type="checkbox" name="" id=""> Save my name, email, and website in this browser
-                                for the next time I comment.</p>
-                            <button class="comment-btn post-btn">Post Comment</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- location -->
+            <div class="location">
+                <h1 class="location-h1">Location</h1>
+                <div class="location-main">
+                    <iframe class="loaction-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.006178408383!2d96.12405771495075!3d16.826049588417398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195c18b45f149%3A0x6487e3091f30ffb0!2sITVisionHub!5e0!3m2!1sen!2ssg!4v1657209173900!5m2!1sen!2ssg" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
 
 
 
-
         <section id="right">
             <div class="booking-room">
                 <div class="room">
-                    <h1>BOOK YOUR ROOM</h1>
+                    <h1 class="room-h1">CONTACT TO AGENT</h1>
                     <form action="#" method="POST">
                         <div class="formControl">
-                            <label for="checkin">Arrival Date (Check In )</label> <br>
-                            <input type="date" id="checkin">
+                            <label class="booking-room-label" for="checkin">Name</label> <br>
+                            <input class="booking-room-input" type="text" placeholder="Enter your name">
                         </div>
                         <div class="formControl">
-                            <label for="checkin">Departure Date (Check Out)</label> <br>
-                            <input type="date" id="checkin">
+                            <label class="booking-room-label" for="checkin">Email</label> <br>
+                            <input class="booking-room-input" type="text" placeholder="Enter your email">
                         </div>
                         <div class="formControl">
-                            <label for="adult">ADULT (14+ YEARS)</label> <br>
-                            <select name="" id="">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                            <label class="booking-room-label" for="checkin">Phone</label> <br>
+                            <input class="booking-room-input" type="text" placeholder="Enter your phone">
+                        </div>
+                        <div class="form-Control">
+                            <label class="booking-room-label" for="checkin">Description</label> <br>
+                            <textarea class="booking-room-textarea" name="" id="" cols="30" rows="6" placeholder="say something about the room"></textarea>
+                        </div>
+                        <!-- <div class="formControl">
+                            <label for="children" class="booking-room-label">Property Type</label> <br>
+                            <select name="" id="" class="modal-select booking-room-select">
+                                <option value="0" class="modal-option" selected>select property type</option>
+                                <option value="1" class="modal-option" >Condominium</option>
+                                <option value="2" class="modal-option" >HDB</option>
+                                <option value="3" class="modal-option" >Corner Terrace</option>
+                                <option value="4" class="modal-option">Apartment</option>
                             </select>
-                        </div>
-                        <div class="formControl">
-                            <label for="children">CHILDREN (0-14 YEARS)</label> <br>
-                            <select name="" id="">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                        </div> -->
+                       
+                        <!-- <div class="formControl">
+                            <label for="children" class="booking-room-label">Rental Fee</label> <br>
+                            <select name="" id="" class="modal-select booking-room-select">
+                                <option value="0" selected class="modal-option">select amount</option>
+                                <option value="1" class="modal-option">From $0 - $300</option>
+                                <option value="2" class="modal-option">From $300 - $500</option>
+                                <option value="3" class="modal-option">From $500 - $2000</option>
+                                <option value="4" class="modal-option">Above $2000</option>
                             </select>
-                        </div>
-                        <div class="extra">
+                        </div> -->
+                        <button class="book-btn">I'm interested</button>
+                        <!-- <div class="extra">
                             <h2>Add Extra</h2>
                             <div>
                                 <input type="checkbox" name="" id="" class="extra-check">
@@ -340,7 +788,7 @@
                                 <p>$0.00</p>
                             </div>
                             <button class="book-btn" type="submit">Book Now</button>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>

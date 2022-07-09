@@ -5,7 +5,23 @@
     font-family: 'Poppin' , sans-serif;
 }
 
+.bg_blue{
+    background-color: #4A9BE3;
+}
 
+.info{
+    color: gold;
+}
+nav a:hover{
+	
+	color:gold !important;
+}
+
+/* navitem logoimg */
+.logoimg{
+    width: 20px;
+    height: 20px;
+}
 section{
     position: relative;
     display: flex;
@@ -21,7 +37,7 @@ section::before{
  left: 0;
  width: 50%;
  height: 100%;
- background: #03a9f4;
+ background: #ffff;
 
 }
 section .container{
@@ -64,6 +80,10 @@ section .container .contactinfo .info li{
     margin: 20px 0;
     cursor: pointer;
     align-items: flex-start;
+
+}
+section .container .contactinfo .info li a{
+    text-decoration: none;
 }
 section .container .contactinfo .info li span:nth-child(1){
     width: 30px;
@@ -188,9 +208,33 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span{
     display: inline-block;
 	transform: translateY(-6px);
 }
+
+.social-links .uil a:hover{
+    background: #ff568c;
+    color: #fff;
+    display: inline-block;
+    transform: translateY(-6px);
+}
 .social-links p{
 	font-size: 12px;
 	margin-top: 20px;}
 
 
+.contact{
+    margin-bottom: 55px;
+    padding-top: 55px;
+}
+
+.location img{
+     width: 23px;
+    height: 23px;
+}
+.mail img{
+    width: 17px;
+    height: 17px;
+}
+.phone img{
+    width: 19px;
+    height: 19px;
+}
 
