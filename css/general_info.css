@@ -34,9 +34,172 @@
     height: 30vh;
     opacity: 0.5;
 }
-#middle_container .single {
-    /* width: 50%; */
+
+
+
+/* Globle News */
+
+#global-news {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+   
 }
-#middle_container .single .single_des {
-    /* width: 50%; */
+.first-global {
+    width: 60%;
 }
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.first-global .header3 {
+    padding: 0 20px;
+}
+
+
+.first-global h3::after{
+    content:"";
+    width: 40%;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    background-color: #fab702;
+    position: absolute;
+}
+
+.gl-news-photo1 {
+    width: 100%;
+    padding: 20px;
+}
+.news .image1{
+    width: 100%;
+    height: 200px;
+}
+.fourphotos {
+    width: 50%;
+}
+
+.gl-news-des {
+    text-align: justify;
+    line-height: 22px;
+}
+
+.column .gl-news-photo2{
+    padding: 20px 10PX;
+    display: flex;
+    align-items: flex-start;
+}
+
+.image2 {
+    width: 30%;
+    height: 80px;
+}
+
+.gl-text {
+    margin-left: 20px;
+}
+
+.gl-news-photo3 .image3 {
+    
+width: 100px;
+height: 100px;
+margin: auto 0;
+object-fit: cover;
+margin-right: 15px;
+/*border-radius: 50%;*/
+
+}
+#gl-general {
+    width: 40%;
+    margin: 10px;
+}
+.news-container {
+    width: 100%;
+}
+.popular {
+    width: 100%;
+}
+
+.gl-news-photo3 {
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: flex-start;
+}
+.gl-news-photo3 p {
+    margin: auto 0;
+    text-align: justify;
+}
+
+@media (max-width:799px) {
+    #global-news {
+       flex-wrap: wrap;
+    }
+    .first-global {
+        width: 100%;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .gl-text {
+        margin-left: 20px;
+        width: 80%;
+        
+    }
+    #gl-general {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .gl-news-photo3 .image3 {
+        width: 150px;
+        height: 150px;
+        margin: auto 0;
+        object-fit: cover;
+        margin-right: 15px;
+        padding: 5px 5px;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width: 477px){
+    .gl-news-des p {
+        margin: 10px 0;
+    }
+
+    .news .image1 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .column .gl-news-photo2 {
+        padding: 10px 10px;
+        align-items: flex-start;
+    }
+
+    .information {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fourphotos {
+        width: 100%;
+    }
+}
+
+
+
+
+
