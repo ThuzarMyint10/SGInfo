@@ -95,6 +95,15 @@
 .main-room{
     padding: 20px 10px;
 }
+.room-container{
+    margin-bottom: 25px;
+}
+.login-container{
+    margin-bottom: 25px;
+}
+.register-container{
+    margin-bottom: 25px;
+}
 .first-room .modal-h1-room{
     text-align: center;
     font-size: 30px;
