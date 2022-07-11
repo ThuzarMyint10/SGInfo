@@ -8,12 +8,13 @@
     list-style: none;
     box-sizing: border-box;
 }
+/* start middle_general */
 
 #general_info {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    
+    /* flex-wrap: wrap; */
+
 }
 
 #first_general {
@@ -25,41 +26,46 @@
 .first_container {
     width: 100%;
     margin: 20px;
-    padding: 0 20px;    
-}
-.second_container {
-    margin: 20px;
     padding: 0 20px;
 }
+
+.second_container {
+    margin: 20px;
+    padding: 0 10px;
+}
+
 .single {
     position: relative;
 }
+
 .single h3::after {
     content: "";
-    width: 7.3em;
-    height: 0.15em;
+    width: 30%;
+    height: 3px;
     background-color: #fab702;
     position: absolute;
-    top: 22px;
-    left: 160px;
+    margin-top: 12px;
+    margin-left: 30px;
 }
+
 .group {
     position: relative;
 }
 
 .group h3::after {
     content: "";
-    width: 7.3em;
-    height: 0.15em;
+    width: 30%;
+    height: 3px;
     background-color: #fab702;
     position: absolute;
-    top: 22px;
-    left: 160px;
+    margin-top: 12px;
+    margin-left: 30px;
 }
 
-.first_container .header_3{
+.first_container .header_3 {
     padding: 0.5em 0;
 }
+
 .second_container .header_3 {
     padding: 0.5em 0;
 }
@@ -83,15 +89,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .small_img {
     width: 100%;
 }
- .small_img img {
+
+.small_img img {
     width: 120px;
     height: 95px;
     object-fit: cover;
     margin-right: 20px;
 }
+
 .small_article .small_img {
     padding-bottom: 20px;
     display: flex;
@@ -104,7 +113,6 @@
 
 #second_general {
     width: 35%;
-    padding: 5px 0;
 }
 
 .group .circle {
@@ -112,6 +120,7 @@
     display: flex;
     align-items: flex-start;
 }
+
 .group .circle img {
     width: 90px;
     height: 90px;
@@ -120,9 +129,12 @@
     margin-right: 15px;
     border-radius: 50%;
 }
+
 .group .circle p {
     padding: 8px 0;
+    margin: auto 0;
 }
+
 .group .circle p span {
     font-weight: bold;
 }
@@ -133,9 +145,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .first_container {
         margin: 20px 20px 0 20px;
     }
+
     #first_general {
         width: 100%;
     }
@@ -143,35 +157,227 @@
     .first_container {
         width: 50%;
     }
+
     .single h3::after {
         content: none;
     }
+
     .group h3::after {
         content: none;
     }
+
     .small_article .small_title {
         font-size: 15px;
     }
+
     .first_container .single .single_des {
         text-align: justify;
     }
+
     #second_general {
         width: 100%;
     }
-   #second_general .second_container .circle_gp {
+
+    #second_general .second_container .circle_gp {
         display: flex;
         flex-wrap: wrap;
-   } 
-   .group .circle {
+    }
+
+    .group .circle {
         width: 50%;
-   }
+    }
 }
+
+@media (max-width: 477px) {
+    #general_info {
+        justify-content: center;
+    }
+
+    #first_general {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #first_general .first_container {
+        width: 100%;
+    }
+
+    #second_general .second_container .circle_gp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .circle_gp .circle {
+        width: 100%;
+    }
+}
+
+/* end of middle_general */
+
+
+/* Globle News */
+
+#global-news {
+    display: flex;
+    margin: 20px 30px;
+    justify-content: space-between;
+   
+}
+.first-global {
+    width: 60%;
+    padding: 12px;
+}
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.first-global .header3 {
+    padding: 0 20px;
+}
+
+
+.first-global h3::after{
+    content:"";
+    width: 30%;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    background-color: #fab702;
+    position: absolute;
+}
+
+.gl-news-photo1 {
+    width: 100%;
+    padding: 0px 20px;
+}
+.news .image1{
+    width: 100%;
+    height: 200px;
+}
+.fourphotos {
+    width: 50%;
+}
+
+.gl-news-des {
+    text-align: justify;
+    line-height: 22px;
+}
+
+.column .gl-news-photo2{
+    padding: 0px 10PX;
+    display: flex;
+    align-items: flex-start;
+}
+
+.image2 {
+    width: 30%;
+    height: 80px;
+}
+
+.gl-text {
+    margin-left: 20px;
+}
+
+.gl-news-photo3 .image3 {
+    
+width: 100px;
+height: 100px;
+margin: auto 15px;
+object-fit: cover;
+
+}
+#gl-general {
+    width: 40%;
+}
+.news-container {
+    width: 100%;
+}
+.popular {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.gl-news-photo3 {
+    padding: 10px 30px 0 0;
+    display: flex;
+    align-items: flex-start;
+}
+.gl-news-photo3 p {
+    margin: auto 0;
+    text-align: justify;
+}
+
+@media (max-width:799px) {
+    #global-news {
+       flex-wrap: wrap;
+    }
+    .first-global {
+        width: 100%;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .gl-text {
+        margin-left: 20px;
+        width: 80%;
+        
+    }
+    #gl-general {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .gl-news-photo3 .image3 {
+        width: 150px;
+        height: 150px;
+        margin: auto 0;
+        object-fit: cover;
+        margin-right: 15px;
+        padding: 5px 5px;
+    }
+}
+
+@media(max-width: 477px){
+    .gl-news-des p {
+        margin: 10px 0;
+    }
+
+    .news .image1 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .column .gl-news-photo2 {
+        padding: 10px 10px;
+        align-items: flex-start;
+    }
+
+    .information {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fourphotos {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* =============================  End of globle news  ================================= */
+
 
 /* =================================== For Health & Education Article  ============================================== */
 #health_education_container{
     display: flex;
     justify-content: space-between;
-    margin: 16px;
+    margin: 16px 50px;
     
 }
 .article{
@@ -285,14 +491,20 @@ hr{
 
 }
 
+/* =================================== End of Health & Education Article  ============================================== */
+
 
 /*========= ==========  ======= Globel News ======  =========== ==================*/
 
+#globel_trending_news_container{
+    margin: 12px 50px;
+}
 #globel_news_container {    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 16px;
+    padding: 12px;
+    
 }
 
 .globel_news_box {
@@ -349,7 +561,7 @@ hr{
     position: absolute;
     bottom: -6%;
     text-align: start;
-
+    list-style: none;
   }
 
   .trending_news {
@@ -465,18 +677,16 @@ hr{
 /*========= ==========  ======= Travel Guides Slider ======  =========== ==================*/
 
 .travel_guide {
-    padding-bottom: 10px;
+    padding-bottom: 10px 50px;
     text-align: center;
 }
 
 .swiper-container {
-    width: 97%;
     min-height: 300px;
     background: #bcd8f0;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin-top: 20px;
-    padding: 28px;
+    margin: 12px 50px;
     }
     .swiper-wrapper {
     margin: 16px;
