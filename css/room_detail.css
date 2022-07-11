@@ -24,6 +24,7 @@
     background-color: #4A9BE3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-content a {
     color: black;
@@ -94,15 +95,6 @@
 /* room modal form */
 .main-room{
     padding: 20px 10px;
-}
-.room-container{
-    margin-bottom: 25px;
-}
-.login-container{
-    margin-bottom: 25px;
-}
-.register-container{
-    margin-bottom: 25px;
 }
 .first-room .modal-h1-room{
     text-align: center;
@@ -594,6 +586,12 @@
     .first-room .userInput-room .modal-select-room {
         padding: 8px 0px;
     }
+    .dropbtn {
+        padding: 9px 0px;
+    }
+    #job,#room,#article,#login,#register{
+        margin-top: 20px;
+    }
 
 
 
@@ -633,6 +631,7 @@
     }
     #right {
         width: 95%;
+        margin: 0;
     }
     #left {
         width: 100%;
@@ -666,6 +665,9 @@
     }
     .book-btn {
         margin: 0 auto;
+    }
+    #right{
+        margin-bottom: 40px;
     }
 }
 

@@ -22,6 +22,7 @@
     background-color: #4A9BE3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-content a {
     color: black;
@@ -35,6 +36,7 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* room modal form */
 .main-room{
@@ -472,6 +474,29 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:799px){
+     /* room modal form */
+     #room,#article,#job,#login,#register{
+        margin-top: 40px;
+    }
+    .first-room .userInput-room {
+        margin-left: 0px; 
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .modal-select-room{
+        width: 49%;
+    }
+    .first-room .userInput-room .modal-select-room {
+        padding: 8px 0px;
+    }
+
+
+    .dropbtn {
+        padding: 9px 0px;
+    }
+    #job,#room,#article,#login,#register{
+        margin-top: 20px;
+    }
     .hero-room-list {
         height: 30vh;
     }
@@ -563,6 +588,24 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:477px){
+    /* modal room */
+    .first-room .modal-h1-room {
+        font-size: 19px;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 12px;
+    }
+    .modal-div-room-100{
+        width: 100%;
+    }
+    .main-room {
+        padding: 20px 0px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        width: 40%;
+    }
+
     .hero-room-list {
         height: 20vh;
     }
