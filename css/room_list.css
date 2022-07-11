@@ -37,6 +37,7 @@
     display: block;
 }
 
+
 /* room modal form */
 .main-room{
     padding: 20px 10px;
@@ -473,6 +474,23 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:799px){
+     /* room modal form */
+     #room,#article,#job,#login,#register{
+        margin-top: 40px;
+    }
+    .first-room .userInput-room {
+        margin-left: 0px; 
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .modal-select-room{
+        width: 49%;
+    }
+    .first-room .userInput-room .modal-select-room {
+        padding: 8px 0px;
+    }
+
+
     .dropbtn {
         padding: 9px 0px;
     }
@@ -570,6 +588,24 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:477px){
+    /* modal room */
+    .first-room .modal-h1-room {
+        font-size: 19px;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 12px;
+    }
+    .modal-div-room-100{
+        width: 100%;
+    }
+    .main-room {
+        padding: 20px 0px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        width: 40%;
+    }
+
     .hero-room-list {
         height: 20vh;
     }
