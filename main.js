@@ -8,6 +8,14 @@ let nav_item_login = document.querySelector('.dropdown-d');
 let nav_item_register = document.querySelector('.dropdown-e');
 let nav_toggle = document.querySelector('.navbar-toggler');
 
+nav_toggle.addEventListener('click', function(){
+    if(navbar.style.display =='none'){
+        navbar.style.display = 'block';
+    }
+    else if(navbar.style.display == 'block'){
+        navbar.style.display = 'none';
+    }
+});
 
 nav_item_job.addEventListener('click', function(){
     navbar.style.display = 'none';
@@ -23,10 +31,6 @@ nav_item_login.addEventListener('click', function(){
 });
 nav_item_register.addEventListener('click', function(){
     navbar.style.display = 'none';
-});
-
-nav_toggle.addEventListener('click', function(){
-    navbar.style.display = 'block';
 });
 
 
@@ -86,27 +90,6 @@ var swiper = new Swiper(".mySwiper", {
         }
   });
 
-  // End of Travel Guide Slider
-
-
-
-//show/hide nav menu
-// const menu = document.querySelector(".navbar");
-// const menuBtn = document.querySelector("#open-menu-btn");
-// const closeBtn = document.querySelector("#close-menu-btn");
-// menuBtn.addEventListener('click', () => {
-//     menu.style.display = "flex";
-//     closeBtn.style.display = "inline-block";
-//     menuBtn.style.display ="none";
-// })
-// const closeNav = () =>{
-//     menu.style.display = "none";
-//     closeBtn.style.display = "none";
-//     menuBtn.style.display ="inline-block";
-// }
-// closeBtn.addEventListener('click', closeNav);
-
-// facilities & features select box
 $(document).ready(function(){
     $('.multi_select').selectpicker();
 })
