@@ -13,7 +13,7 @@
 #general_info {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -218,20 +218,20 @@
 /* Globle News */
 
 #global-news {
-    width: 100%;
-    margin: 20px 0;
-    padding: 15px;
     display: flex;
+    margin: 20px 30px;
     justify-content: space-between;
    
 }
 .first-global {
     width: 60%;
+    padding: 12px;
 }
 .information {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 .first-global .header3 {
     padding: 0 20px;
@@ -240,7 +240,7 @@
 
 .first-global h3::after{
     content:"";
-    width: 40%;
+    width: 30%;
     height: 3px;
     margin-top: 10px;
     margin-left: 28px;
@@ -251,7 +251,7 @@
 
 .gl-news-photo1 {
     width: 100%;
-    padding: 20px;
+    padding: 0px 20px;
 }
 .news .image1{
     width: 100%;
@@ -267,7 +267,7 @@
 }
 
 .column .gl-news-photo2{
-    padding: 10px 10PX;
+    padding: 0px 10PX;
     display: flex;
     align-items: flex-start;
 }
@@ -285,10 +285,8 @@
     
 width: 100px;
 height: 100px;
-margin: auto 0;
+margin: auto 15px;
 object-fit: cover;
-margin-right: 15px;
-/*border-radius: 50%;*/
 
 }
 #gl-general {
@@ -299,6 +297,7 @@ margin-right: 15px;
 }
 .popular {
     width: 100%;
+    margin-top: 35px;
 }
 
 .gl-news-photo3 {
@@ -378,7 +377,7 @@ margin-right: 15px;
 #health_education_container{
     display: flex;
     justify-content: space-between;
-    margin: 16px;
+    margin: 16px 50px;
     
 }
 .article{
@@ -497,11 +496,15 @@ hr{
 
 /*========= ==========  ======= Globel News ======  =========== ==================*/
 
+#globel_trending_news_container{
+    margin: 12px 50px;
+}
 #globel_news_container {    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 16px;
+    padding: 12px;
+    
 }
 
 .globel_news_box {
@@ -674,18 +677,16 @@ hr{
 /*========= ==========  ======= Travel Guides Slider ======  =========== ==================*/
 
 .travel_guide {
-    padding-bottom: 10px;
+    padding-bottom: 10px 50px;
     text-align: center;
 }
 
 .swiper-container {
-    width: 97%;
     min-height: 300px;
     background: #bcd8f0;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin-top: 20px;
-    padding: 28px;
+    margin: 12px 50px;
     }
     .swiper-wrapper {
     margin: 16px;
