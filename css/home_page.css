@@ -265,7 +265,7 @@ img{
 #home-room {
     background-color: #ffff;
     text-align: center;
-    padding: 40px 80px;
+    padding: 30px 80px;
     position: relative;
 }
 
@@ -279,22 +279,13 @@ img{
 }
 
 a.room-detail {
-    padding-bottom: 20px;
-    padding-right: 55px;
+    margin: auto;
+    /* padding-bottom: 20px;
+    padding-right: 55px; */
 }
 
 a.room-detail:hover{
     color: #fab702;
-}
-
-#home-room .room-detail::after {
-    content: "";
-    width: 3rem;
-    height: 0.15rem;
-    background-color: #fab702;
-    position: absolute;
-    top: 135px;
-    right: 580px;
 }
 
 #home-room-container {
@@ -362,22 +353,23 @@ a.room-detail:hover{
 
 #home-gen-info {
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     padding: 0;
+    margin: auto;
 }
 
 #home-gen-info h2{
     color: #000;
-    margin: 0;
-    padding: 40px 0;
+    margin: auto;
+    padding-bottom: 40px;
 }
 
 .home-gen-info-container {
     position: relative;
+    margin: 0px 50px;
 }
 
 .home-gen-info-container img {
-    width: 100%;
     height: 25em;
 }
 
@@ -907,26 +899,44 @@ a.room-detail:hover{
 }
 
 .swiper-container {
-    /* width: 97%; */
-    min-height: 300px;
-    background: #bcd8f0;
+    min-height: 280px;
     overflow: hidden;
     scroll-behavior: smooth;
     margin: 12px 50px;
     }
     .swiper-wrapper {
     margin: 16px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 8px 8px 11px rgba(216, 216, 216, 0.1);
-    padding-bottom: 12px;
-  }
-
-  @media (max-width: 544px) {
+    .swiper-slide {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.77);
+    }
+    /* .card .card-body{
+        background-image: url('../images/general_images/fashion.jpg');
+        display: block;
+        object-fit: cover;
+    } */
+  
+    .cover{
+        color: rgb(255, 255, 255);
+        position: relative;
+        min-height: 280px;
+        background: url("../images/general_images/beach.avif") no-repeat scroll 0px 100% / cover transparent;
+    }
+    .cover1{
+        background: url("../images/general_images/travel-02.jpg") no-repeat scroll 0px 100% / cover transparent;
+    }
+    .cover2{
+        background: url("../images/general_images/travel-03.jpg") no-repeat scroll 0px 100% / cover transparent;
+    }
+    .cover3{
+        background: url("../images/general_images/travel-08.jpg") no-repeat scroll 0px 100% / cover transparent;
+    }
+    .cover4{
+        background: url("../images/general_images/travel-04.jpg") no-repeat scroll 0px 100% / cover transparent;
+    }
+  
+  @media (max-width: 799px) {
     .swiper-wrapper {
         padding: 0;
     }
@@ -949,39 +959,58 @@ a.room-detail:hover{
     text-align: center;
     margin-top: 50%;
   }
+  .overlay .travel_type{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    top: 45%;
+  }
   .overlay p {
     width: 80%;
     display: block;
     position: absolute; 
-    top: 50%; 
+    top: 60%; 
     left: 50%; 
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%); 
     transform: translate(-50%,-50%);
     /* font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; */
-    font-size: 28px; 
-    font-weight: bold;
+    font-size: 18px; 
+    
     color: #fff;
-    line-height: 70px;
+    /* line-height: 70px; */
     text-align: center; 
     margin: 0; 
     z-index: 9;
   }
-  
+  .swiper-slide:hover::after .card-title{
+    content: '';
+  }
+  .swiper-slide:hover::after .card-text{
+    content: '';
+  }
   .swiper-slide:hover .overlay {
     bottom: 0;
     height: 100%;
   }
+  /* .card-body{
+    padding-top: 50px;
+  } */
 
 /*========= ==========  ======= End Of Travel Guides Slider ======  =========== ==================*/
 
 /*========= ==========  ======= Globel News ======  =========== ==================*/
+
+#globel_trending_news{
+    margin: 12px 50px;
+}
 
 #globel_news_container {    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 16px;
+    /* margin: 12px 50px; */
 }
 
 .globel_news_box {
@@ -1044,14 +1073,13 @@ a.room-detail:hover{
   .trending_news {
     display: flex;
     justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 20px;
+    /* margin: auto; */
+    /* width: 80%; */
   }
 
   .trending_news p {
     color: #000;
-    width: 30%;
+    width: 20%;
   }
   .trending_news marquee {
     color: #000;
@@ -1256,7 +1284,6 @@ nav a:hover{
   }
 
 /*=================== END Navbar & Carousel TDTZ ===================*/
-
 
 
 

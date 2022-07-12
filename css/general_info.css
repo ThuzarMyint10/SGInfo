@@ -312,7 +312,9 @@ object-fit: cover;
 
 @media (max-width:799px) {
     #global-news {
-       flex-wrap: wrap;
+       display: inline-block;
+       justify-content: center;
+       margin: 0px 0px;
     }
     .first-global {
         width: 100%;
@@ -510,7 +512,7 @@ hr{
 .globel_news_box {
     justify-content: center;
     align-items: center;
-    background-image: url("../images/general_images/makeup_artist.jpg");
+    background-image: url("../images/general_images/travel-03.jpg");
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -596,7 +598,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/general_images/travel-12.jpg");
+    background-image: url("../images/general_images/health-00.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -606,11 +608,11 @@ hr{
 }
 
 #globel_news_container2 .globel_news_box2.globel_news_box3 {
-    background-image: url("../images/general_images/travel-02.jpg");
+    background-image: url("../images/general_images/restaurant-04.jpg");
 }
 
 #globel_news_container2 .globel_news_box2.globel_news_box4 {
-    background-image: url("../images/general_images/travel-03.jpg");
+    background-image: url("../images/general_images/health-20.jpg");
 }
 
 #globel_news_container2 .globel_news_box2.globel_news_box5 {
@@ -635,6 +637,7 @@ hr{
     width: 100%;
     margin-top: 16px;
     height: 400px;
+    padding-left: 0px;
 }
 .news_type {
     font-size:12px;
@@ -666,6 +669,7 @@ hr{
     width: 100%;
     margin-top: 16px;
     height: 400px;
+    padding-left: 0px;
 }
     
     }

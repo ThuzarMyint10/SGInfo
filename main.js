@@ -37,7 +37,7 @@ var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
             },
             1000:{
-                slidesPerView: 3,
+                slidesPerView: 4,
             },
         },
         pagination: {
