@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 /*=============================== Modal Box =====================================*/
+/* navbar dropdown */
 .dropbtn {
     color: white;
     padding: 16px;
@@ -24,6 +25,7 @@
     background-color: #4A9BE3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-content a {
     color: black;
@@ -39,13 +41,14 @@
 }
 
 
-/* model form */
+/* other model form */
 .main{
     padding: 20px;
 }
 .first .modal-h1{
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
     font-family: 'Oxygen', sans-serif;
 }
 .first .userInput{
@@ -91,18 +94,10 @@
     margin: 20px 0;
 }
 
+
 /* room modal form */
 .main-room{
     padding: 20px 10px;
-}
-.room-container{
-    margin-bottom: 25px;
-}
-.login-container{
-    margin-bottom: 25px;
-}
-.register-container{
-    margin-bottom: 25px;
 }
 .first-room .modal-h1-room{
     text-align: center;
@@ -201,7 +196,7 @@
     width: 25%;
 }
 
-/* login form */
+/* login modal form */
 .otherLogin .other-p{
     text-align: center;
 }
@@ -245,7 +240,7 @@
     text-decoration: underline;
 }
 
-/* register form */
+/* register modal form */
 .first .modal-h4{
     text-align: center;
     margin-top: 25px;
@@ -284,10 +279,8 @@
 
 
 
-
-
-
 /*=============================== Main Content =====================================*/
+/* left content */
 #main{
     margin: 20px;
     height: auto;   
@@ -434,7 +427,6 @@
     width: 100%;
 }
 .review .review-detail .review-detail-img{
-    /* border-radius: 50%; */
     width: auto;
     height: 50%;
 }
@@ -497,9 +489,7 @@
 
 
 
-
-
-
+/* right content */
 #right{
     width: 30%;
     height: 88vh;
@@ -579,25 +569,8 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:799px){
-    /* room modal form */
-    #room,#article,#job,#login,#register{
-        margin-top: 40px;
-    }
-    .first-room .userInput-room {
-        margin-left: 0px; 
-        margin-right: 0px;
-        margin-bottom: 30px;
-    }
-    .modal-select-room{
-        width: 49%;
-    }
-    .first-room .userInput-room .modal-select-room {
-        padding: 8px 0px;
-    }
 
-
-
-    /* content */
+    /* main content */
     .review .review-detail img {
         height: 50%;
         width: 50%;
@@ -633,6 +606,7 @@
     }
     #right {
         width: 95%;
+        margin: 0;
     }
     #left {
         width: 100%;
@@ -667,28 +641,77 @@
     .book-btn {
         margin: 0 auto;
     }
+    #right{
+        margin-bottom: 40px;
+    }
+
+    /* other modal form */
+    .first .modal-h1 {
+        font-size: 26px;
+    }
+    .first .userInput .modal-label {
+        font-size: 13px;
+    }
+    .first .uploadBtn {
+        font-size: 14px;
+        padding: 13px;
+        font-weight: 100;
+    }
+    
+
+    /* room modal form */
+    #job,#room,#article,#login,#register{
+        margin-top: 20px;
+    }
+    .first-room .modal-h1-room {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 13px;
+    }
+    .modal-room-p{
+        font-size: 13px;
+    }
+    .first-room .userInput-room {
+        margin-left: 0px; 
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .modal-select-room{
+        width: 49%;
+    }
+    .userInput-room .modal-select-room .modal-option-room {
+        font-size: 13px;
+    }
+    .userInput-room .modal-select-room .modal-option-room-special {
+        font-size: 13px;
+    }
+    .room-modal-p{
+        font-size: 13px;
+    }
+    .first-room .userInput-room .modal-select-room {
+        padding: 8px 0px;
+        font-size: 13px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .dropbtn {
+        padding: 9px 0px;
+    }
+
+    /* register modal form */
+     .term .term-p {
+        font-size: 13px;
+    }
+   
 }
 
 /*================================ Responsive ===============================*/
 @media (max-width:477px){
-    /* modal room */
-    .first-room .modal-h1-room {
-        font-size: 19px;
-    }
-    .first-room .userInput-room .modal-label-room {
-        font-size: 12px;
-    }
-    .modal-div-room-100{
-        width: 100%;
-    }
-    .main-room {
-        padding: 20px 0px;
-    }
-    .first-room .uploadBtn-room {
-        padding: 10px 0px;
-        width: 40%;
-    }
-
 
     /* main content */
     #main {
@@ -697,6 +720,7 @@
     .title-right{
         width: 30%;
         padding-left: 10px;
+        text-align: right;
     }
     .room-detail-each {
         width: 100%;
@@ -712,6 +736,15 @@
     .amenities .amentities-item {
         text-align: left;
     }
+    .amentities-item .amentities-li {
+        font-size: 14px;
+    }
+    .room-detail-label {
+        font-size: 15px;
+    }
+    .room-detail-input {
+        font-size: 14px;
+    }
     .other-room-main .other-room {
         flex-direction: column;
     }
@@ -726,6 +759,12 @@
         border: none;
         width: 100%;
     }
+    .reply-p{
+        font-size: 13px;
+    }
+    .reply-label{
+        font-size: 13px;
+    }
     .older-comment-btn, .post-btn, .book-btn {
         max-width: 50%;
     }
@@ -734,6 +773,9 @@
     }
     .title-h1{
         font-size: 20px;
+    }
+    .overview-p {
+        font-size: 13px;
     }
     .review-main {
         padding: 10px 10px;
@@ -757,4 +799,56 @@
     .book-btn{
         margin-top: 20px;
     }
+
+    /* other modal form */
+    .main{
+        padding: 0px;
+    }
+    .first{
+        padding: 0px;
+    }
+    .first .modal-h1 {
+        font-size: 23px;
+    }
+    .first .userInput .modal-label {
+        font-size: 12px;
+    }
+    .first .uploadBtn {
+        font-size: 13px;
+        padding: 12px;
+        font-weight: 100;
+    }
+    form.first{
+        padding: 0.01em 0px;
+    }
+
+     /* room modal form */
+     .first-room .modal-h1-room {
+        font-size: 19px;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 12px;
+    }
+    .modal-div-room-100{
+        width: 100%;
+    }
+    .main-room {
+        padding: 20px 0px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        width: 40%;
+    }
+
+    /* register modal form */
+    .otherLogin .other-h2 {
+        font-size: 14px;
+    }
+    .otherLogin .other-login {
+        font-size: 13px;
+    }
+    .term .term-p {
+        font-size: 12px;
+    }
+
 }

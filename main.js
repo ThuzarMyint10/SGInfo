@@ -1,3 +1,43 @@
+/*============ Toggle Navbar Start ===============*/
+
+let navbar = document.querySelector('.navbar-collapse');
+let nav_item_job = document.querySelector('.dropdown-a');
+let nav_item_article = document.querySelector('.dropdown-b');
+let nav_item_room = document.querySelector('.dropdown-c');
+let nav_item_login = document.querySelector('.dropdown-d');
+let nav_item_register = document.querySelector('.dropdown-e');
+let nav_toggle = document.querySelector('.navbar-toggler');
+
+nav_toggle.addEventListener('click', function(){
+    if(navbar.style.display =='none'){
+        navbar.style.display = 'block';
+    }
+    else if(navbar.style.display == 'block'){
+        navbar.style.display = 'none';
+    }
+});
+
+nav_item_job.addEventListener('click', function(){
+    navbar.style.display = 'none';
+});
+nav_item_article.addEventListener('click', function(){
+    navbar.style.display = 'none';
+});
+nav_item_room.addEventListener('click', function(){
+    navbar.style.display = 'none';
+});
+nav_item_login.addEventListener('click', function(){
+    navbar.style.display = 'none';
+});
+nav_item_register.addEventListener('click', function(){
+    navbar.style.display = 'none';
+});
+
+
+
+/*============ Toggle Navbar End ===============*/
+
+
 
 
 //show/hide nav menu
@@ -53,3 +93,5 @@ var swiper = new Swiper(".mySwiper", {
 $(document).ready(function(){
     $('.multi_select').selectpicker();
 })
+
+
