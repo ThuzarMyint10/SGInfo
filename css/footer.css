@@ -111,7 +111,7 @@
         margin-top:0px;
     }
 }
-@media (max-width:799px){
+@media (max-width:477px){
     .foot-col {
         width: 45%;
     }
@@ -124,5 +124,17 @@
     }
     .footer-last{
         padding-left: 0px;
+    }
+    .footer-h4 {
+        font-size: 14px;
+    }
+    .footer-p,.footer-a {
+        font-size: 12px;
+    }
+    .social-links .uil {
+        font-size: 15px;
+    }
+    p.footer-p-last{
+        font-size: 11px;
     }
 }
