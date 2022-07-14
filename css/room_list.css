@@ -1,4 +1,5 @@
 /*=============================== Modal Box =====================================*/
+/* navbar dropdown */
 .dropbtn {
     color: white;
     padding: 16px;
@@ -22,6 +23,7 @@
     background-color: #4A9BE3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-content a {
     color: black;
@@ -34,6 +36,80 @@
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+
+/* other model form */
+.main{
+    padding: 20px;
+}
+.first .modal-h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+}
+.first .userInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.first .userInput .modal-label{
+    font-weight: bolder;
+}
+.first .userInput .modal-div{
+    margin-bottom: 20px;
+}
+.salary-div{
+    display: flex;
+}
+.salary-div-1{
+    display: flex;
+    width: 49%;
+    align-items: center;
+}
+.salary-label{
+    margin: 0px 10px;
+}
+.modal-input-salary{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #088178;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.first .userInput .modal-input,.first .userInput .modal-select{
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #088178;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.userInput .modal-select .modal-option{
+    font-size: 14px;
+}
+.userInput .modal-select .modal-option:nth-child(1){
+    background-color: rgb(77, 75, 75);
+    font-weight: bolder;
+    color: white;
+}
+.first .userInput .modal-input:focus {
+    outline: 1px solid #088178;
+}
+.first .uploadBtn{
+    border: none;
+    border-radius: 5px;
+    padding: 17px;
+    background-color: #088178;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 20px 0;
 }
 
 /* room modal form */
@@ -69,7 +145,7 @@
     border-radius: 6px;
 }
 .first-room .userInput-room .modal-label-room{
-    font-weight:500;
+    font-weight: 500;
 }
 .first-room .userInput-room .modal-div-room{
     margin-bottom: 10px;
@@ -137,58 +213,7 @@
     width: 25%;
 }
 
-/* model form */
-.main{
-    padding: 20px;
-}
-.first .modal-h1{
-    text-align: center;
-    font-size: 30px;
-}
-.first .userInput{
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.first .userInput .modal-label{
-    font-weight: bolder;
-}
-.first .userInput .modal-div{
-    margin-bottom: 20px;
-}
-.first .userInput .modal-input,.first .userInput .modal-select{
-    margin-top: 8px;
-    width: 100%;
-    padding: 12px 10px;
-    border: 1px solid #088178;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.userInput .modal-select .modal-option{
-    font-size: 14px;
-}
-.userInput .modal-select .modal-option:nth-child(1){
-    background-color: rgb(77, 75, 75);
-    font-weight: bolder;
-    color: white;
-}
-.first .userInput .modal-input:focus {
-    outline: 1px solid #088178;
-}
-.first .uploadBtn{
-    border: none;
-    border-radius: 5px;
-    padding: 18px;
-    background-color: #088178;
-    color: white;
-    font-size: 15px;
-    font-weight: bolder;
-    margin: 20px 0;
-}
-
-/* login form */
+/* login modal form */
 .otherLogin .other-p{
     text-align: center;
 }
@@ -232,7 +257,7 @@
     text-decoration: underline;
 }
 
-/* register form */
+/* register modal form */
 .first .modal-h4{
     text-align: center;
     margin-top: 25px;
@@ -266,7 +291,6 @@
 .term{
     padding: 0 20px;
 }
-
 
 
 
@@ -472,6 +496,7 @@
 
 /*================================ Responsive ===============================*/
 @media (max-width:799px){
+    /* main content */
     .hero-room-list {
         height: 30vh;
     }
@@ -502,6 +527,11 @@
     }
     .main-content-img {
         margin-right: 20px;
+        height: 225px;
+    }
+    .main-content-real-img {
+        width: 100%;
+        height: 100%;
     }
     .line {
         margin: 5px 0;
@@ -559,10 +589,80 @@
     .agent-text {
         margin-left: 5px;
     }
+    .agent-h3 {
+        font-size: 17px;
+    }
+    .agent-p {
+        font-size: 13px;
+    }
+    .agent-h1 {
+        font-size: 22px;
+    }
+
+    /* other modal form */
+     .first .modal-h1 {
+        font-size: 26px;
+    }
+    .first .userInput .modal-label {
+        font-size: 13px;
+    }
+    .first .uploadBtn {
+        font-size: 14px;
+        padding: 13px;
+        font-weight: 100;
+    }
+
+
+    /* room modal form */
+    #job,#room,#article,#login,#register{
+        margin-top: 20px;
+    }
+    .first-room .modal-h1-room {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 13px;
+    }
+    .first-room .userInput-room {
+        margin-left: 0px; 
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .modal-select-room{
+        width: 49%;
+    }
+    .userInput-room .modal-select-room .modal-option-room {
+        font-size: 13px;
+    }
+    .userInput-room .modal-select-room .modal-option-room-special {
+        font-size: 13px;
+    }
+    .room-modal-p{
+        font-size: 10px;
+    }
+    .first-room .userInput-room .modal-select-room {
+        padding: 8px 0px;
+        font-size: 13px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .dropbtn {
+        padding: 9px 0px;
+    }
+
+    /* register modal form */
+    .term .term-p {
+        font-size: 13px;
+    }
 }
 
 /*================================ Responsive ===============================*/
 @media (max-width:477px){
+    /* main content */
     .hero-room-list {
         height: 20vh;
     }
@@ -645,6 +745,61 @@
         display: inline-block;
     }
     .agent-p {
+        font-size: 12px;
+    }
+
+    /* other modal form */
+    .main{
+        padding: 0px;
+    }
+    .first{
+        padding: 0px;
+    }
+    .first .modal-h1 {
+        font-size: 23px;
+    }
+    .first .userInput .modal-label {
+        font-size: 12px;
+    }
+    .first .uploadBtn {
+        font-size: 13px;
+        padding: 12px;
+        font-weight: 100;
+    }
+    form.first{
+        padding: 0.01em 0px;
+    }
+    .salary-label{
+        font-size: 13px;
+    }
+
+
+    /* room modal form*/
+     .first-room .modal-h1-room {
+        font-size: 19px;
+    }
+    .first-room .userInput-room .modal-label-room {
+        font-size: 12px;
+    }
+    .modal-div-room-100{
+        width: 100%;
+    }
+    .main-room {
+        padding: 20px 0px;
+    }
+    .first-room .uploadBtn-room {
+        padding: 10px 0px;
+        width: 40%;
+    }
+
+    /* register modal form */
+    .otherLogin .other-h2 {
+        font-size: 14px;
+    }
+    .otherLogin .other-login {
+        font-size: 13px;
+    }
+    .term .term-p {
         font-size: 12px;
     }
 }

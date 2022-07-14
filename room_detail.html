@@ -8,6 +8,7 @@
     <title>Room Detail</title>
     <link rel="stylesheet" href="css/room_detail.css">
     <link rel="stylesheet" href="css/home_page.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- iconscout cdn -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -30,7 +31,7 @@
 <body>
 
     <!-- =============================== Nav Bar ===================================== -->
-    <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
         <div class="container-fluid mx-lg-5">
           <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
           <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,8 +80,57 @@
             </ul>
           </div>
         </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
+        <div class="container-fluid mx-lg-5">
+          <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
+          <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-lg-4">
+                <a class="nav-link active" aria-current="page" href="Home_page.html">Home</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="room_list.html">Rooms</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="general_info.html">General</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active collapsed" aria-expanded="false" href="Job.html">Jobs</a>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item ms-lg-4">
+                <div class="dropdown">
+                    <button class="dropbtn">Upload</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-a" onclick="document.getElementById('job').style.display='block'">Job</a>
+                        <a href="#" class="dropdown-b" onclick="document.getElementById('article').style.display='block'">Article</a>
+                        <a href="#" class="dropdown-c" onclick="document.getElementById('room').style.display='block'">Room</a>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-regular fa-user"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-d" onclick="document.getElementById('register').style.display='block'">Register</a>
+                        <a href="#" class="dropdown-e" onclick="document.getElementById('login').style.display='block'">Login</a>
+                        <a href="">Logout</a>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item  ms-lg-4">
+                <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
-
 
     <!-- =============================== Modal Box ===================================== -->
     <div class="w3-container"> 
@@ -130,7 +180,16 @@
                             </div>
                             <div class="modal-div">
                                 <label for="" class="modal-label">SALARY</label> <br>
-                                <input class="modal-input" type="text">
+                                <div class="salary-div">
+                                    <div class="salary-div-1">
+                                        <label for="" class="salary-label">Min</label>
+                                        <input class="modal-input-salary" type="number">
+                                    </div>
+                                    <div class="salary-div-1">
+                                        <label for="" class="salary-label">Max</label>
+                                    <input class="modal-input-salary" type="number">
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-div">
                                 <label for="" class="modal-label">JOB LOCATION</label> <br>
@@ -211,7 +270,7 @@
                             </div>
                             <div class="modal-div-room">
                                 <label for="" class="modal-label-room">AVAILABILITY</label> <br>
-                                <input class="modal-input-room" type="text">
+                                <input class="modal-input-room" type="date">
                             </div>
                             <div class="modal-div-room">
                                 <label for="" class="modal-label-room">DEVELOPER</label> <br>
@@ -296,6 +355,7 @@
                                     <option value="" class="modal-option-room">Oven / Microwave</option>
                                     <option value="" class="modal-option-room">Washing Machine</option>
                                 </select>
+                                <p class="modal-room-p">Please press Ctrl key and click to select multiple items</p>
                             </div>
                             <div class="modal-div-room modal-div-room-100">
                                 <label for="" class="modal-label-room">SELECT FACILITIES</label> <br>
@@ -702,14 +762,14 @@
                         <!-- reply -->
                         <h1 style="font-size: 25px; font-weight:bolder;">LEAVE A REPLY</h1>
                         <div class="reply">
-                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <p class="reply-p">Your email address will not be published. Required fields are marked *</p>
                             <form action="" >
-                                <label for="name">Your Name</label>
+                                <label for="name" class="reply-label">Your Name</label>
                                 <input class="reply-input" type="text" id="name" placeholder="">
-                                <label for="email">Email</label>
+                                <label for="email" class="reply-label">Email</label>
                                 <input class="reply-input" type="text" id="email" placeholder=""> <br><br>
                                 <textarea name="" id="" cols="62" rows="7" class="reply-textarea" placeholder="Comment here ..."></textarea>
-                                <p><input type="checkbox" name="" class="reply-input-check"> Save my name, email, and website in this browser for the next time I comment.</p>
+                                <p class="reply-p"><input type="checkbox" name="" class="reply-input-check"> Save my name, email, and website in this browser for the next time I comment.</p>
                                 <button class="post-btn">Post Comment</button>
                             </form>
                         </div>
@@ -718,7 +778,7 @@
             </div>
             <!-- location -->
             <div class="location">
-                <h1 class="location-h1">Location</h1>
+                <h1 class="location-h1">LOCATION</h1>
                 <div class="location-main">
                     <iframe class="loaction-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.006178408383!2d96.12405771495075!3d16.826049588417398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195c18b45f149%3A0x6487e3091f30ffb0!2sITVisionHub!5e0!3m2!1sen!2ssg!4v1657209173900!5m2!1sen!2ssg" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -793,8 +853,49 @@
                 </div>
             </div>
         </section>
-
     </section>
+    
+     <!-- footer -->
+     <footer class="section-footer">
+        <div class="foot-col">
+            <h4 class="footer-h4">SG<span class="info">INFO</span></h4>
+            <p class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    
+        <div class="foot-col">
+            <h4 class="footer-h4">INFORMATION</h4>
+            <a class="footer-a" href="Contact.html">Contact Us</a>
+            <a class="footer-a" href="#">Terms & Conditions</a>
+            <a class="footer-a" href="#">Privacy Policy</a>
+            <a class="footer-a" href="#">F.A.Q.</a>
+        </div>
+    
+        <div class="foot-col">
+            <h4 class="footer-h4">QUICK LINKS</h4>
+            <a class="footer-a" href="room_list.html">Rooms</a>
+            <a class="footer-a" href="Job.html">Jobs</a>
+            <a class="footer-a" href="general_info.html">General</a>
+        </div>
+    
+        <div class="foot-col footer-last">
+            <h4 class="footer-h4">CONTACT</h4>
+            <p class="footer-p">90 Madison Ave,First Floor New York,NY</p>
+            <a class="footer-a" href="tel:+95 1 9669724">Telephone: 200 256 1855</a>
+            <a class="footer-a" href="mailto:sginfo@myanmar.com">Email: mail@yourmail.com</a>
+            <div class="social-links">
+                <i class="uil uil-facebook-f uil_icon"></i>
+                <i class="uil uil-instagram-alt uil_icon"></i>
+                <i class="uil uil-twitter uil_icon"></i>
+                <i class="uil uil-youtube uil_icon"></i>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p class="footer-p footer-p-last">ITVisionHub SGcamp4@2022 | All Rights Reserved</p>
+        </div>
+    </footer>
 
 
 
