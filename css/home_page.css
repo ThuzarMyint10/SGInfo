@@ -37,7 +37,7 @@ body{
     line-height: 1.7;
     color: var(--color-white);
     background-color: var(--main-color);
-   
+    overflow: hidden;
     /* background: var(--color-bg); */
 }
 .container{
@@ -132,7 +132,6 @@ img{
     flex-wrap: wrap;
     align-items: center;
     background-color: #000;
-    width: 100%;
     margin-top: 1.5rem;
     
 }
@@ -159,34 +158,44 @@ img{
 
 .form{
     text-decoration: #000;
-    padding:1rem, 2rem ;
     display: flex;
-    width:100;
+    width:25%;
     
+}
+.form input{
+    padding: 12px;
+}
+.form .normal{
+    padding: 12px;
 }
 
 .btn-section{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+.btn-section .job{
+   text-align: center;
+    padding: 20px 0px;
+}
 
 
 
 @media(max-width:799px){
 
-    #newsletter .form {
-        width: 50%;
+    .newsletter{
+        justify-content: space-evenly;
+        margin-left: -70px;
     }
-    
+    .newstext{
+        padding-left: 0px;
+        
+    }
 
-
-.form{
+  .form{
     text-decoration: #000;
-
     display: flex;
-    width:100;
-    
-}
+    /* width:100; */
+   }
 
 .normal {
     font-size: 14px;
@@ -198,20 +207,24 @@ img{
     border: none;
     outline: none;
     transition: 0.2s;
-
     padding-left: 20%;
     }
 }
 
-
 @media(max-width: 477px){
     
-    #newsletter {
-        padding: 40px 20px; 
+    .newsletter {
+        /* width: 100%; */
+        display: block;
+        justify-items: start;
+        padding: 20px 20px; 
+        margin-left: 0px;
      }
  
-     #newsletter .form {
+     .newsletter .form {
          width: 100%;
+         padding-left: 0px;
+         margin-left: 0px;
      }
  
      footer .copyright {
@@ -231,12 +244,11 @@ img{
 
     .form{
         text-decoration: #000;
-        padding:1rem, 2rem ;
+        padding:12px;
         display: flex;
         width:100;
-        margin-left: 10%;
-        
-        
+        margin-left: 8%;
+        margin-bottom: 12px;
     }
     footer p {
         font-size: 13px;
@@ -253,6 +265,23 @@ img{
         margin-bottom: 0px;
     }
 
+    .form input {
+        padding: 0px 12px;
+        height: 40px;
+    }
+    
+    .form .normal {
+        padding: 12px;
+        height: 40px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .normal > a {
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -262,7 +291,7 @@ img{
 #home-room {
     background-color: #ffff;
     text-align: center;
-    padding: 40px 80px;
+    padding: 30px 80px;
     position: relative;
 }
 
@@ -276,22 +305,13 @@ img{
 }
 
 a.room-detail {
-    padding-bottom: 20px;
-    padding-right: 55px;
+    margin: auto;
+    /* padding-bottom: 20px;
+    padding-right: 55px; */
 }
 
 a.room-detail:hover{
     color: #fab702;
-}
-
-#home-room .room-detail::after {
-    content: "";
-    width: 3rem;
-    height: 0.15rem;
-    background-color: #fab702;
-    position: absolute;
-    top: 135px;
-    right: 580px;
 }
 
 #home-room-container {
@@ -307,15 +327,14 @@ a.room-detail:hover{
     line-height: 30px;
 }
 
-.home-room-des .p1 {
-    padding-bottom: 15px;
-}
-
 .home-room-des hr {
     border: 0;
     top: 0;
     border-top: 1px solid rgba(204, 204, 204, 0.6);
-    padding: 2px 10px;
+    /* padding: 2px 10px; */
+}
+.home-room-des p{
+    margin-bottom: 5px;
 }
 
 #home-room .home-room-sample {
@@ -347,11 +366,17 @@ a.room-detail:hover{
     right: 0;
 }
 
-.home-room-info .home-room-info-single {
-    display: inline;
-    font-size: 15px;
-    padding-left: 20px;
+.home-room-info {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
+
+/* .home-room-info .home-room-info-single {
+    display: inline;
+    font-size: 15px;*/
+    /* padding-left: 20px; */
+/* }  */
 
 /* end of home-room */
 
@@ -359,23 +384,26 @@ a.room-detail:hover{
 
 #home-gen-info {
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     padding: 0;
+    margin: auto;
+    text-align: center;
 }
 
 #home-gen-info h2{
     color: #000;
-    margin: 0;
-    padding: 40px 0;
+    margin: auto;
+    padding-bottom: 40px;
 }
 
 .home-gen-info-container {
     position: relative;
+    margin: 0px 80px;
 }
 
 .home-gen-info-container img {
-    width: 100%;
     height: 25em;
+    margin-top: 30px;
 }
 
 .home-gen-info-det h4,
@@ -388,8 +416,9 @@ a.room-detail:hover{
     height: 280px;
     background-color: #f7c94b;
     position: absolute;
+    text-align: start;
     right: 130px;
-    bottom: 15%;
+    bottom: 8%;
     z-index: 99;
     animation: introLoad 2s forwards;
 
@@ -411,8 +440,8 @@ a.room-detail:hover{
 }
 
 .home-gen-info-det .home-gen-btn {
-    margin-bottom: 30px;
-    margin-left: 300px;
+    margin-top: 3%;
+    margin-left: 60%;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
@@ -454,68 +483,52 @@ a.room-detail:hover{
     }
 
     .home-gen-info-container .home-gen-info-det {
-        width: 50%;
+        width: 60%;
         height: 280px;
-        bottom: 10%;
-        right: 10%;
-    }
-
-    .home-gen-info-det .home-gen-btn {
-        font-size: 14px;
-        font-weight: 600;
-        padding: 10px 30px;
-        color: #000;
-        border: none;
-        outline: none;
-        margin: 0 10px 0 200px;
+        right: 50px;
     }
 }
 
 @media (max-width: 477px) {
-
-    #home-room h2 {
-        margin: 0;
-        padding: 0.6em 0;
-        font-size: 1.5rem;
+    .home-gen-info-container{
+        margin: 12px 50px;
     }
-
-    a.room-detail {
-        padding-bottom: 0.7em;
-        padding-right: 3.5em;
-    }
-
-    #home-room .room-detail::after {
-        top: 115px;
-        right: 120px;
+    #home-room{
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 30px;
     }
 
     #home-room-container {
         display: flex;
+        flex-direction: column;
         flex: wrap;
+        width: 100%;
+        margin: 0 auto;
         padding: 0.9em 0;
+        align-content: center;
     }
 
     #home-room .home-room-sample {
         margin: 0.8em;
-        width: 25%;
-    }
-
-    #home-gen-info h2 {
-        margin: 0;
-        padding: 1em 0;
-        font-size: 1.5rem;
+        width: 100%;
     }
 
     .home-gen-info-det h4 {
-        font-size: 20px;
+        font-size: 18px;
+        padding:12px 0px 0px 12px;
+        margin: 0px;
     }
 
     .home-gen-info-container .home-gen-info-det {
         right: 0;
         bottom: 0;
-        width: 80%;
-        height: 280px;
-        font-size: 18px;
+        width: 75%;
+        height: 260px;
+        font-size: 14px;
+        margin: 12px;
     }
 
     .home-gen-info-container img {
@@ -524,9 +537,9 @@ a.room-detail:hover{
     }
 
     .home-gen-info-det .home-gen-btn {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
-        padding: 8px 20px;
+        padding: 8px 16px;
         color: #000;
         border: none;
         outline: none;
@@ -593,7 +606,7 @@ a.room-detail:hover{
     padding-left: 0rem;
     /* margin-right: 2rem; */
     width: 15rem;
-    background-color: #bcd8f0;
+    
 }
 
 #location{
@@ -706,19 +719,18 @@ a.room-detail:hover{
 
 .browse{
     font-size: 15px;
-    /* font-family: 'Roboto', sans-serif; */
     text-align: center;
     height: 3rem;
     width: max-content;
     margin-top: 1rem;
     cursor: pointer;
-    /* background-color: #4A9BE3; */
     background-color: rgb(247, 201, 75);
     width: 10rem;
     border-radius: 0.3rem;
     margin: 0 auto;
     display: block;
     margin-bottom: 1.2em;
+    
 }
 
 .browse a{
@@ -733,7 +745,7 @@ a.room-detail:hover{
     text-shadow: rgba(216, 216, 216, 0.1);
 }
 
-@media only screen and (max-width: 989px){
+@media only screen and (max-width: 799px){
     .jobs_header{
         width: 100%;
         /* margin-right: 16px; */
@@ -744,9 +756,7 @@ a.room-detail:hover{
 
     .search_icon{
         width: 92%;
-        
         margin-bottom: 0.5rem;
-        /* margin-left: 1rem; */
         
     }
     
@@ -788,10 +798,6 @@ a.room-detail:hover{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
-    
-    
     background-size: cover;
     margin: 20px;
     padding: 10px;
@@ -809,41 +815,49 @@ a.room-detail:hover{
 @media only screen and (max-width: 477px){
     .jobs_header{
         width: 100%;
-        margin-right: 16px;
+        /* margin: auto; */
+        margin-left: 17px;
+        margin-bottom: 30px;
     }
 
-    #search_jobs{
+    #search_jobs::placeholder,#location::placeholder, #jobs_categories::placeholder{
+        color: white;
+        opacity: 0.75; /* Firefox */
+      }
+
+    #search_jobs,#location, #jobs_categories{
         border-radius: 0.3rem;
         font-size: 15px;
+        height: 2.8rem;
+        width: 19rem;
+        background-color: #1070c4;
+        margin-bottom: 0.5rem;
+        margin-left: 0px;
+        color: white;
+        padding-left: 20px;
+        
+    }
+
+    /* #location{
+       font-size: 15px;
+        border-radius: 0.3rem;
         height: 2.8rem;
         width: 19rem;
         background-color: #4A9BE3;
         margin-bottom: 0.5rem;
         margin-left: 0px;
-    }
-
-    #location{
-        /* font-family: 'Roboto', sans-serif; */
-        font-size: 15px;
-        border-radius: 0.3rem;
-        height: 2.8rem;
-        width: 19rem;
-        background-color: #4A9BE3;
-        margin-bottom: 0.5rem;
-        /* text-align: center; */
-        margin-left: 0px;
-    }
+    } */
 
     #jobs_categories{
         font-size: 15px;
-        /* font-family: 'Roboto', sans-serif; */
-        color: #554848;
+        color: white;
+        opacity: 0.75;
         border-radius: 0.5rem;
         height: 2.8rem;
         width: 19rem;
         padding-left: 1rem;
         padding-right: 2rem;
-        background-color: #4A9BE3;
+        background-color: #1070c4;
         margin-left: 0px;
     }
 
@@ -867,264 +881,32 @@ a.room-detail:hover{
     .jobbackground_color a{
         text-decoration: none;
     }
-
-    /* #jobs_type{
-        margin: 0;
-        padding: 9px 0 9px 0;
-        
-    } */
+    .search_icon {
+        background-color: #1070c4;
+    }
+    #jobs_types {
+        padding-bottom: 16px;
+    }
     #jobs_type{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
-    
-    
     background-size: cover;
     margin: 20px;
+    margin-bottom: -10px;
     padding: 10px;
     padding-bottom: 0.1rem;
 }
 
     .browse{
-        margin-left: 6rem;
+        display: block;
+        margin:0 auto;
+        margin-top: 30px;
     }
 
 }
 
 /* ============END OF HOME JOBS=============== */
-
-/*========= ==========  ======= Travel Guides Slider ======  =========== ==================*/
-
-.travel_guide {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.swiper-container {
-    /* width: 97%; */
-    min-height: 300px;
-    background: #bcd8f0;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    margin: 12px 50px;
-    }
-    .swiper-wrapper {
-    margin: 16px;
-    }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 8px 8px 11px rgba(216, 216, 216, 0.1);
-    padding-bottom: 12px;
-  }
-
-  @media (max-width: 544px) {
-    .swiper-wrapper {
-        padding: 0;
-    }
-  }
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(22, 9, 9, 0.488);
-    opacity: 10;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: absolute;
-    text-align: center;
-    margin-top: 50%;
-  }
-  .overlay p {
-    width: 80%;
-    display: block;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%); 
-    transform: translate(-50%,-50%);
-    /* font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; */
-    font-size: 28px; 
-    font-weight: bold;
-    color: #fff;
-    line-height: 70px;
-    text-align: center; 
-    margin: 0; 
-    z-index: 9;
-  }
-  
-  .swiper-slide:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-
-/*========= ==========  ======= End Of Travel Guides Slider ======  =========== ==================*/
-
-/*========= ==========  ======= Globel News ======  =========== ==================*/
-
-#globel_news_container {    
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 16px;
-}
-
-.globel_news_box {
-    justify-content: center;
-    align-items: center;
-    background-image: url("../images/general_images/makeup_artist.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 500px;
-    position: relative;
-}
-.background_color {
-    background-color: rgba(22, 9, 9, 0.488);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.news_type {
-    font-size:0.8rem;
-    text-transform: uppercase;
-    letter-spacing: var(--mainSpacing);
-    color: #fff;
-    text-align: start;
-    padding: 32px 16px;
-    z-index: 5;
-    position: absolute;
-    bottom: 4%;
-    opacity: 0.8;
-    margin-bottom: 20px;
-
-  }
-
-  .news_title1 {
-    margin-bottom: 20px;
-  }
-
-.news_title {
-    text-align: start;
-    letter-spacing: var(--mainSpacing);
-    font-size: 1rem;
-    color: #fff;
-    transition: var(--mainTransition);
-    cursor: pointer;
-    padding-left: 16px;
-    z-index: 5;
-    position: absolute;
-    bottom: 6%;
-  }
-
-  .background_color.journalist {
-    position: absolute;
-    bottom: -6%;
-    text-align: start;
-
-  }
-
-  .trending_news {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 20px;
-  }
-
-  .trending_news p {
-    color: #000;
-    width: 30%;
-  }
-  .trending_news marquee {
-    color: #000;
-    width: 60%;
-  }
-
-#globel_news_container2 {
-    width: 50%;
-    margin: 0 auto;
-    padding-left: 16px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    position: relative;
-}
-
-#globel_news_container2 .globel_news_box2{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../images/general_images/travel-12.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    
-}
-
-#globel_news_container2 .globel_news_box2.globel_news_box3 {
-    background-image: url("../images/general_images/travel-02.jpg");
-}
-
-#globel_news_container2 .globel_news_box2.globel_news_box4 {
-    background-image: url("../images/general_images/travel-03.jpg");
-}
-
-#globel_news_container2 .globel_news_box2.globel_news_box5 {
-    background-image: url("../images/general_images/travel-11.jpg");
-}
-
-
-@media(max-width: 799px){
-    
-#globel_news_container {    
-    display: block;
-    position: relative;
-}
-
-.globel_news_box {
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-#globel_news_container2 {
-    width: 100%;
-    margin-top: 16px;
-    height: 400px;
-}
-
-}
-
-
-@media(max-width: 477px){
-    
-.news_type {
-    bottom: 15%;
-  }
-    
-    }
-
-
-/*========= ==========  ======= End Of Globel News ======  =========== ==================*/
-
 
 
 .sginfo{
@@ -1253,7 +1035,6 @@ nav a:hover{
   }
 
 /*=================== END Navbar & Carousel TDTZ ===================*/
-
 
 
 
