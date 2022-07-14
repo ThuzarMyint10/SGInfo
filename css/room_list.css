@@ -63,6 +63,25 @@
 .first .userInput .modal-div{
     margin-bottom: 20px;
 }
+.salary-div{
+    display: flex;
+}
+.salary-div-1{
+    display: flex;
+    width: 49%;
+    align-items: center;
+}
+.salary-label{
+    margin: 0px 10px;
+}
+.modal-input-salary{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #088178;
+    border-radius: 5px;
+    font-size: 14px;
+}
 .first .userInput .modal-input,.first .userInput .modal-select{
     margin-top: 8px;
     width: 100%;
@@ -749,6 +768,9 @@
     }
     form.first{
         padding: 0.01em 0px;
+    }
+    .salary-label{
+        font-size: 13px;
     }
 
 
