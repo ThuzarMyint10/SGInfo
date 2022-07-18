@@ -250,3 +250,25 @@ nav a:hover{
 	
 	color:gold !important;
 }
+
+/* pagination */
+
+#pagination{
+	text-align: center;
+	margin: 40px 0px;
+}
+
+#pagination .pagination-a {
+	text-decoration: none;
+	background-color: #4A9BE3;
+	color: white;
+	padding: 15px 20px;
+	margin: 5px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+#pagination .pagination-a .pagination i{
+	font-size: 16px;
+	font-weight: 600;
+}
