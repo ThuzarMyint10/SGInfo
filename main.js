@@ -32,6 +32,11 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+const genInfoBtn = document.querySelector(".gen_info_btn");
+function changeColor() {
+    window.location.href = "general_info_detail.html";
+}
+
 let navbar = document.querySelector('.navbar-collapse');
 let nav_item_job = document.querySelector('.dropdown-a');
 let nav_item_article = document.querySelector('.dropdown-b');
