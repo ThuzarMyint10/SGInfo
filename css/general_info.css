@@ -266,7 +266,6 @@
     outline: none;
 }
 
-
 @media (max-width:799px) {
     #global-news {
        display: block;
@@ -407,8 +406,18 @@
     display: flex;
     justify-content: space-between;
 }
-hr{
+.longline{
     margin: auto;
+    width: 65%;
+    size: 5;
+    color:darkblue;
+}
+
+.shortline{
+    margin: auto;
+    width:30%;
+    size: 5;
+    color:darkblue;
 }
 .edu_description{
     color: #000;
