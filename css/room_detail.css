@@ -2,7 +2,7 @@
 
 /*=============================== Modal Box =====================================*/
 /* navbar dropdown */
-.dropbtn {
+/* .dropbtn {
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -38,11 +38,11 @@
 }
 .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 
 /* other model form */
-.main{
+/* .main{
     padding: 20px;
 }
 .first .modal-h1{
@@ -111,11 +111,11 @@
     font-size: 15px;
     font-weight: bolder;
     margin: 20px 0;
-}
+} */
 
 
 /* room modal form */
-.main-room{
+/* .main-room{
     padding: 20px 10px;
 }
 .first-room .modal-h1-room{
@@ -213,10 +213,10 @@
     display: inline-block;
     margin: 0 auto;
     width: 25%;
-}
+} */
 
 /* login modal form */
-.otherLogin .other-p{
+/* .otherLogin .other-p{
     text-align: center;
 }
 .otherLogin .google,.otherLogin .facebook,.otherLogin .apple{
@@ -257,10 +257,10 @@
 }
 .otherLogin .other-login .other-login-a:hover{
     text-decoration: underline;
-}
+} */
 
 /* register modal form */
-.first .modal-h4{
+/* .first .modal-h4{
     text-align: center;
     margin-top: 25px;
 }
@@ -292,9 +292,7 @@
 }
 .term{
     padding: 0 20px;
-}
-
-
+} */
 
 
 
@@ -514,7 +512,7 @@
     height: 88vh;
     padding: 20px 30px;
     position: sticky;
-    top: 100px;
+    top: 0px;
     overflow: scroll;
     border: 1px solid rgb(95, 104, 99);
     border-radius: 10px;
@@ -623,9 +621,16 @@
     .post-btn {
         width: auto;
     }
+    .overview-p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        opacity: 0.75;
+    }
     #right {
         width: 95%;
         margin: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
     #left {
         width: 100%;
@@ -665,7 +670,7 @@
     }
 
     /* other modal form */
-    .first .modal-h1 {
+    /* .first .modal-h1 {
         font-size: 26px;
     }
     .first .userInput .modal-label {
@@ -675,11 +680,11 @@
         font-size: 14px;
         padding: 13px;
         font-weight: 100;
-    }
+    } */
     
 
     /* room modal form */
-    #job,#room,#article,#login,#register{
+    /* #job,#room,#article,#login,#register{
         margin-top: 20px;
     }
     .first-room .modal-h1-room {
@@ -720,12 +725,12 @@
     }
     .dropbtn {
         padding: 9px 0px;
-    }
+    } */
 
     /* register modal form */
-     .term .term-p {
+     /* .term .term-p {
         font-size: 13px;
-    }
+    } */
    
 }
 
@@ -812,6 +817,10 @@
     .review .review-detail .review-detail-p {
         font-size: 12px;
     }
+    .location-h1 {
+        margin: 20px;
+        margin-top: 0px;
+    }
     #right {
         width: 100%;
     }
@@ -820,7 +829,7 @@
     }
 
     /* other modal form */
-    .main{
+    /* .main{
         padding: 0px;
     }
     .first{
@@ -842,10 +851,10 @@
     }
     .salary-label{
         font-size: 13px;
-    }
+    } */
 
     /* room modal form */
-     .first-room .modal-h1-room {
+     /* .first-room .modal-h1-room {
         font-size: 19px;
     }
     .first-room .userInput-room .modal-label-room {
@@ -860,10 +869,10 @@
     .first-room .uploadBtn-room {
         padding: 10px 0px;
         width: 40%;
-    }
+    } */
 
     /* register modal form */
-    .otherLogin .other-h2 {
+    /* .otherLogin .other-h2 {
         font-size: 14px;
     }
     .otherLogin .other-login {
@@ -871,6 +880,6 @@
     }
     .term .term-p {
         font-size: 12px;
-    }
+    } */
 
 }
