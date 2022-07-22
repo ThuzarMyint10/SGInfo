@@ -43,13 +43,13 @@
     padding: 0.5em 0;
 }
 
-.first_container .single .gift_img {
+.first_container .gift_img {
     padding: 0.8em 0;
     width: 100%;
     height: 200px;
 }
 
-.first_container .single .single_des {
+.first_container .single_des {
     width: 100%;
     padding: 0.5em 0;
     text-align: justify;
@@ -88,13 +88,13 @@
     width: 40%;
 }
 
-.group .circle {
+.circle {
     padding: 10px 5px;
     display: flex;
     align-items: flex-start;
 }
 
-.group .circle img {
+.circle img {
     width: 90px;
     height: 90px;
     margin: auto 0;
@@ -103,40 +103,44 @@
     border-radius: 50%;
 }
 
-.group .circle p {
+.circle p {
     padding: 8px 0;
     margin: auto 0;
 }
 
-.group .circle p span {
+.circle p span {
     font-weight: bold;
 }
 
 @media (max-width:799px) {
     #general_info {
-        justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
     }
 
     .first_container {
-        margin: 20px 20px 0 20px;
+        margin-right: 10px;
+        padding-right: 0px;
+    }
+
+    .first_container_2 {
+        margin-left: 10px;
     }
 
     #first_general {
         width: 100%;
     }
-
-    .first_container {
-        width: 50%;
-    }
     .small_article .small_title {
         font-size: 15px;
     }
 
-    .first_container .single .single_des {
+    .single_des {
         text-align: justify;
     }
+    .second_container {
+    padding-left: 0px;
+}
 
     #second_general {
         width: 100%;
@@ -147,23 +151,34 @@
         flex-wrap: wrap;
     }
 
-    .group .circle {
+    .circle {
         width: 50%;
     }
 }
 
 @media (max-width: 477px) {
     #general_info {
+        width: 80%;
+        margin: 20px auto;
         justify-content: center;
     }
 
     #first_general {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    #first_general .first_container {
         width: 100%;
+    }
+    .first_container {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0px;
+    }
+    #second_general {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .second_container {
+        padding-left: 0px;
     }
 
     #second_general .second_container .circle_gp {
@@ -173,6 +188,7 @@
 
     .circle_gp .circle {
         width: 100%;
+        padding: 12px 0px;
     }
 }
 
@@ -198,7 +214,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .information .gl-news-photo1 {
     width: 40%;
@@ -250,13 +266,12 @@
     outline: none;
 }
 
-
 @media (max-width:799px) {
     #global-news {
        display: block;
        justify-content: center;
        margin: 0px 80px;
-       width: 100%;
+       width: 80%;
     }
     .information{
         width: 100%;
@@ -276,7 +291,7 @@
     .gl-news-photo2 {
         width: 100%;
         display: flex;
-        padding: 10px 10px;
+        /* padding: 10px 10px; */
         align-items: flex-start;
     }
 
@@ -292,9 +307,28 @@
         margin-right: 15px;
         padding: 5px 5px;
     }
+    #must_read_container {
+    width: 100%;
+}
 }
 
 @media(max-width: 477px){
+     #global-news {
+            width: 80%;
+            margin: 0 auto;
+        }
+    .first-global {
+        width: 100%;
+    }
+    .information .gl-news-photo1 {
+        width: 100%;
+    }
+    .information .fourphotos {
+        width: 100%;
+    }
+    .gl-news-des {
+        margin-top: 10px;
+    }
     .gl-news-des p {
         margin: 10px 0;
     }
@@ -306,20 +340,33 @@
 
     .gl-news-photo2 {
         display: flex;
-        padding: 10px 10px;
+        padding: 10px 0;
         align-items: flex-start;
     }
-
+    .gl-news-photo2 .image2 {
+        width: 30%;
+        height: 80px;
+        padding: 0 10px 0 0;
+    }
     .information {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
-    .fourphotos {
+    #must_read_container {
         width: 100%;
-        padding: 10px 0;
+        text-align: left;
+    }
+    .gen_info_card {
+        line-height: 35px;
+        margin-top: 20px;
+    }
+    .gen_info_card .gen_info_btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px 30px;
+        margin-left: 50%;
     }
 }
 
@@ -359,17 +406,27 @@
     display: flex;
     justify-content: space-between;
 }
-hr{
+.longline{
     margin: auto;
+    width: 65%;
+    size: 5;
+    color:darkblue;
+}
+
+.shortline{
+    margin: auto;
+    width:30%;
+    size: 5;
+    color:darkblue;
 }
 .edu_description{
     color: #000;
-    word-spacing: 12px;
+    /* text-align: justify; */
     width: 100%;
 }
 .edu_title{
     color: #000;
-    word-spacing: 12px;
+    word-spacing: 5px;
 }
 .article_type{
     color: #000;
@@ -394,6 +451,7 @@ hr{
 }
 .article_text{
     padding-left: 16px;
+    margin: auto 0;
 }
 .img_slider{
     height: 300px;
@@ -418,7 +476,20 @@ hr{
     #health_education_container{
         display: block;
         justify-content: space-between;
-        margin: 16px;
+        width: 80%;
+    }
+    .article_container {
+        margin-bottom: 20px;
+    }
+    .article_row {
+        margin-top: 16px;
+        margin-right: 0px;
+        text-align: justify;
+    }
+    .article_row {
+        margin-top: 16px;
+        margin-right: 0px;
+        text-align: justify;
     }
     .advertisement{
         width: 100%;
@@ -430,13 +501,38 @@ hr{
 }
 @media(max-width: 477px){
     #health_education_container{
-        display: block;
+        width: 80%;
+        /* display: block; */
         justify-content: space-between;
-        margin: 16px;
+        margin: 0 auto;
+    }
+    .article_container {
+        width: 100%;
+    }
+    .article_row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .article_image {
+        width: 100%;
+        height: 200px;
+    }
+    .article_text {
+        padding-left: 0px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    .article_row1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
     .advertisement{
         width: 100%;
-        /* height: 100px; */
+        margin-bottom: 25px;
     }
     .item {
         height: 200px;
@@ -458,7 +554,7 @@ hr{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 16px 0px;
+    padding: 20px 0px;
 }
 
 .globel_news_box {
@@ -601,8 +697,9 @@ hr{
 
 @media(max-width: 477px){
     #globel_trending_news_container{
-        margin: 12px 50px;
-        padding-top: 20px;
+        width: 80%;
+        margin: 0 auto;
+        /* padding-top: 20px; */
     }
 .news_type {
     bottom: 10%;
@@ -632,8 +729,15 @@ hr{
     height: 400px;
     padding-left: 0px;
 }
+.trending_news{
+    width: 100%;
+}
+.trending_news p {
+    width: 50%;
+    margin-bottom: 10px;
+}
     
-    }
+}
 
 
 /*========= ==========  ======= End Of Globel News ======  =========== ==================*/
@@ -749,7 +853,16 @@ hr{
      }
      @media (max-width: 799px) {
      .swiper-container{
-        margin: 12px 50px;
+        margin: 12px 80px;
+     }
+    }
+    @media (max-width: 477px) {
+     .swiper-container{
+        margin: 0 auto;
+        width: 80%;
+     }
+     .travel_guide{
+        text-align: left;
      }
     }
 /*========= ==========  ======= End Of Travel Guides Slider ======  =========== ==================*/

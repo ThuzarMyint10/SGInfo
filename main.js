@@ -34,6 +34,11 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+const genInfoBtn = document.querySelector(".gen_info_btn");
+function changeColor() {
+    window.location.href = "general_info_detail.html";
+}
+
 
 
 /*============ Toggle Navbar End ===============*/
